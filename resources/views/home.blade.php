@@ -163,7 +163,7 @@
         <h2 class="text-3xl md:text-4xl font-bold">How it works</h2>
         <p class="mt-4 text-slate-600 max-w-3xl">
             Two products + one practice. Drink <span class="font-semibold">Unimate</span> in the morning to support focus and energy during your fast.
-            Take <span class="font-semibold">Balance</span> 10–15 minutes before your largest meal to slow carbohydrate impact and help control hunger.
+            Take <span class="font-semibold">Balance (Bios Life S)</span> 10–15 minutes before your largest meal to slow carbohydrate impact and help control hunger.
             Keep a daily fasting window (commonly 16:8) that fits your lifestyle.
         </p>
 
@@ -175,7 +175,7 @@
             </div>
             <div class="rounded-2xl bg-slate-50 p-6 shadow-sm">
                 <div class="text-emerald-700 font-semibold">Step 2</div>
-                <h3 class="mt-1 font-bold text-xl">Balance (Pre-meal)</h3>
+                <h3 class="mt-1 font-bold text-xl">Balance (Bios Life S) - (Pre-meal)</h3>
                 <p class="mt-2 text-slate-600">Patented fiber matrix formulated to blunt post-meal glucose/insulin spikes and keep you fuller.</p>
             </div>
             <div class="rounded-2xl bg-slate-50 p-6 shadow-sm">
@@ -187,7 +187,7 @@
         <section class="py-12">
             <div class="mx-auto max-w-7xl px-6 flex ">
                 <img src="{{ asset('images/Unicity/practice_image.png') }}"
-                     alt="Unimate + Balance + Time-based eating"
+                     alt="Unimate + Balance (Bios Life S) + Time-based eating"
                      class="max-w-md md:max-w-xl w-full h-auto mx-auto">
             </div>
         </section>
@@ -315,7 +315,7 @@
         <h3 class="text-2xl font-bold">How to use</h3>
         <ol class="mt-6 space-y-4 text-slate-700 list-decimal pl-6">
             <li><span class="font-semibold">Morning:</span> Mix Unimate with water (hot or cold) and sip during your fast.</li>
-            <li><span class="font-semibold">Pre-meal:</span> Mix Balance in water and drink 10–15 minutes before your largest meal.</li>
+            <li><span class="font-semibold">Pre-meal:</span> Mix Balance (Bios Life S) in water and drink 10–15 minutes before your largest meal.</li>
             <li><span class="font-semibold">Window:</span> Keep a fasting window (e.g., 16 hours) between dinner and your first meal.</li>
         </ol>
     </div>
@@ -508,7 +508,7 @@
 </section>
 
 <footer class="py-10 text-center text-sm text-slate-500">
-    © {{ date('Y') }} Feel Great System. All rights reserved.
+    © {{ date('Y') }} Feel Great System Australia. All rights reserved.
 </footer>
 </body>
 </html>
