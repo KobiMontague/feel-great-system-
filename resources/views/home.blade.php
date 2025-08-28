@@ -10,14 +10,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ config('app.url') ?? url('/') }}">
 
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased">
 <!-- Top bar with personal logo -->
 <nav class="bg-white/80 backdrop-blur border-b sticky top-0 z-50">
     <div class="mx-auto max-w-7xl px-6 h-14 flex items-center justify-between">
-        <a href="{{ url('/') }}" class="flex items-center gap-3">
+        <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener" class="flex items-center gap-3">
             <img
                 src="{{ asset('images/logo/kobi_logo.png') }}"
                 alt="Kobi personal logo"
@@ -28,7 +28,7 @@
         </a>
 
         <!-- (Optional) quick CTA on the right -->
-        <a href="{{ config('unicity.referral_url') }}"
+        <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
            class="hidden sm:inline-flex items-center rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-emerald-700">
             Order Now
         </a>
@@ -326,7 +326,7 @@
     <div class="mx-auto max-w-5xl px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center">Daily Timeline (16:8 Example)</h2>
         <p class="mt-2 text-center text-slate-600">
-            Adjust the times to suit your routine. Balance before meals, Unimate in your fasting window.
+            Adjust the times to suit your routine. Balance (Bios Life S) before meals, Unimate in your fasting window.
         </p>
 
         <div class="mt-10 relative">
@@ -340,7 +340,7 @@
                     <div class="flex flex-col md:flex-row md:items-center md:gap-6">
                         <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">5–7pm</div>
                         <div class="rounded-2xl bg-slate-50 p-4 shadow">
-                            <p class="font-semibold">Balance + dinner</p>
+                            <p class="font-semibold">Balance (Bios Life S) + dinner</p>
                             <p class="text-sm text-slate-600">Take <span class="font-medium">Balance</span> 10–15 minutes before dinner.</p>
                         </div>
                     </div>
@@ -364,7 +364,7 @@
                     <div class="flex flex-col md:flex-row md:items-center md:gap-6">
                         <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">Midnight</div>
                         <div class="rounded-2xl bg-slate-50 p-4 shadow">
-                            <p class="font-semibold">Blood sugar normalizes</p>
+                            <p class="font-semibold">Blood sugar normalises</p>
                             <p class="text-sm text-slate-600">Your body continues shifting from fed to fasted state.</p>
                         </div>
                     </div>
@@ -389,7 +389,7 @@
                         <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">4am</div>
                         <div class="rounded-2xl bg-slate-50 p-4 shadow">
                             <p class="font-semibold">Glucagon is released</p>
-                            <p class="text-sm text-slate-600">Signals your body to mobilize stored fuel.</p>
+                            <p class="text-sm text-slate-600">Signals your body to mobilise stored fuel.</p>
                         </div>
                     </div>
                 </li>
@@ -448,8 +448,8 @@
                     <div class="flex flex-col md:flex-row md:items-center md:gap-6">
                         <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">Noon</div>
                         <div class="rounded-2xl bg-slate-50 p-4 shadow">
-                            <p class="font-semibold">Balance + lunch (fasting ends)</p>
-                            <p class="text-sm text-slate-600">Take <span class="font-medium">Balance</span> 10–15 minutes before your first meal.</p>
+                            <p class="font-semibold">Balance (Bios Life S) + lunch (fasting ends)</p>
+                            <p class="text-sm text-slate-600">Take <span class="font-medium">Balance (Bios Life S)</span> 10–15 minutes before your first meal.</p>
                         </div>
                     </div>
                 </li>
@@ -480,7 +480,7 @@
                 <p class="text-slate-700">No—Unimate is designed to be taken during your fast.</p>
             </div>
             <div>
-                <h4 class="font-semibold">When do I take Balance?</h4>
+                <h4 class="font-semibold">When do I take Balance (Bios Life S)?</h4>
                 <p class="text-slate-700">10–15 minutes before your largest meal; you can also use it before other meals as needed.</p>
             </div>
             <div>
