@@ -294,6 +294,155 @@
     </div>
 </section>
 
+<!-- 📊 Blood Marker Explanations (responsive) -->
+<section id="markers" class="py-16 bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">Understanding the Blood Markers</h2>
+        <p class="mt-4 text-slate-600 text-center max-w-3xl mx-auto">
+            What each marker means, why it matters, and how it relates to long-term health.
+        </p>
+
+        <!-- Mobile: cards -->
+        <div class="mt-10 space-y-4 md:hidden">
+            <!-- A1C -->
+            <div class="rounded-xl border border-slate-200 p-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-semibold text-slate-900">A1C</h3>
+                    <span class="text-xs text-slate-500">Hemoglobin A1c (HbA1c)</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                    Average blood glucose over ~3 months (based on sugar attaching to hemoglobin).
+                </p>
+                <p class="mt-2 text-sm text-emerald-700">
+                    Why it matters: Key indicator for pre/Type 2 diabetes; check every 3–6 months.
+                </p>
+            </div>
+
+            <!-- Triglycerides -->
+            <div class="rounded-xl border border-slate-200 p-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-semibold text-slate-900">Triglycerides</h3>
+                    <span class="text-xs text-slate-500">Serum Triglycerides</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                    Main form of fat in the blood.
+                </p>
+                <p class="mt-2 text-sm text-emerald-700">
+                    Why it matters: High levels raise risk of heart disease & metabolic syndrome.
+                </p>
+            </div>
+
+            <!-- HDL -->
+            <div class="rounded-xl border border-slate-200 p-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-semibold text-slate-900">HDL</h3>
+                    <span class="text-xs text-slate-500">High-Density Lipoprotein</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                    “Good” cholesterol that carries cholesterol away from arteries.
+                </p>
+                <p class="mt-2 text-sm text-emerald-700">
+                    Why it matters: Higher HDL is protective against heart disease.
+                </p>
+            </div>
+
+            <!-- LDL -->
+            <div class="rounded-xl border border-slate-200 p-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-semibold text-slate-900">LDL</h3>
+                    <span class="text-xs text-slate-500">Low-Density Lipoprotein</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                    “Bad” cholesterol that contributes to plaque in arteries.
+                </p>
+                <p class="mt-2 text-sm text-emerald-700">
+                    Why it matters: High LDL raises risk of heart attack & stroke.
+                </p>
+            </div>
+
+            <!-- Non-HDL -->
+            <div class="rounded-xl border border-slate-200 p-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-semibold text-slate-900">Non-HDL</h3>
+                    <span class="text-xs text-slate-500">Total Cholesterol − HDL</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                    Captures all atherogenic (“bad”) particles like LDL/VLDL.
+                </p>
+                <p class="mt-2 text-sm text-emerald-700">
+                    Why it matters: Often a stronger predictor of cardiovascular risk than LDL alone.
+                </p>
+            </div>
+
+            <!-- ALT -->
+            <div class="rounded-xl border border-slate-200 p-4 shadow-sm">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-semibold text-slate-900">ALT</h3>
+                    <span class="text-xs text-slate-500">Alanine Aminotransferase</span>
+                </div>
+                <p class="mt-2 text-sm text-slate-700">
+                    Liver enzyme; elevated values indicate liver stress/damage.
+                </p>
+                <p class="mt-2 text-sm text-emerald-700">
+                    Why it matters: Lowering suggests improved liver health / less fatty liver.
+                </p>
+            </div>
+        </div>
+
+        <!-- Desktop: table -->
+        <div class="mt-10 overflow-x-auto hidden md:block">
+            <table class="min-w-full divide-y divide-slate-200 border border-slate-200 rounded-lg">
+                <thead class="bg-slate-100">
+                <tr>
+                    <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700">Marker</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700">Technical Name</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700">What it Measures</th>
+                    <th class="px-4 py-3 text-left text-sm font-semibold text-slate-700">Why it Matters</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-sm">
+                <tr>
+                    <td class="px-4 py-4 font-medium text-slate-800">A1C</td>
+                    <td class="px-4 py-4">Hemoglobin A1c (HbA1c)</td>
+                    <td class="px-4 py-4">Average blood glucose over ~3 months (sugar bound to hemoglobin).</td>
+                    <td class="px-4 py-4">Primary indicator for pre/Type 2 diabetes; track every 3–6 months.</td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-4 font-medium text-slate-800">Triglycerides</td>
+                    <td class="px-4 py-4">Serum Triglycerides</td>
+                    <td class="px-4 py-4">Main fat circulating in blood.</td>
+                    <td class="px-4 py-4">High levels raise risk of heart disease & metabolic syndrome.</td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-4 font-medium text-slate-800">HDL</td>
+                    <td class="px-4 py-4">High-Density Lipoprotein Cholesterol</td>
+                    <td class="px-4 py-4">“Good” cholesterol that removes excess cholesterol.</td>
+                    <td class="px-4 py-4">Higher HDL is protective against heart disease.</td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-4 font-medium text-slate-800">LDL</td>
+                    <td class="px-4 py-4">Low-Density Lipoprotein Cholesterol</td>
+                    <td class="px-4 py-4">“Bad” cholesterol contributing to plaque build-up.</td>
+                    <td class="px-4 py-4">Higher LDL increases risk of atherosclerosis & stroke.</td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-4 font-medium text-slate-800">Non-HDL</td>
+                    <td class="px-4 py-4">Total Cholesterol − HDL</td>
+                    <td class="px-4 py-4">All atherogenic particles (LDL, VLDL, etc.).</td>
+                    <td class="px-4 py-4">Strong overall predictor of cardiovascular risk.</td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-4 font-medium text-slate-800">ALT</td>
+                    <td class="px-4 py-4">Alanine Aminotransferase</td>
+                    <td class="px-4 py-4">Liver enzyme indicating liver cell injury when elevated.</td>
+                    <td class="px-4 py-4">Improvement suggests better liver function / less fatty liver.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
 <!-- Results teaser -->
 <section class="py-16 bg-emerald-50">
     <div class="mx-auto max-w-6xl px-6 text-center">
