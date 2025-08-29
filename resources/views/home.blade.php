@@ -27,11 +27,21 @@
             <span class="sr-only">Feel Great System — Kobi</span>
         </a>
 
-        <!-- (Optional) quick CTA on the right -->
-        <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
-           class="hidden sm:inline-flex items-center rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-emerald-700">
-            Order Now
-        </a>
+        <!-- Right-side CTAs -->
+        <div class="flex items-center gap-3">
+            <!-- Product Catalogue -->
+{{--            <a href="https://ushop-media.unicity.com/flip/SG_Unicity_E_Catalogue/"--}}
+{{--               target="_blank" rel="noopener"--}}
+{{--               class="hidden sm:inline-flex items-center rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-800 hover:bg-slate-50">--}}
+{{--                Product Catalogue--}}
+{{--            </a>--}}
+
+            <!-- Order Now -->
+            <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
+               class="hidden sm:inline-flex items-center rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-emerald-700">
+                Order Now
+            </a>
+        </div>
     </div>
 </nav>
 <!-- Announcement -->
@@ -81,7 +91,7 @@
 </section>
 
 <!-- 🔥 Transformation FIRST -->
-<section class="py-16 bg-white" id="transformation">
+<section class="py-16 bg-slate-50" id="transformation">
     <div class="mx-auto max-w-7xl px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center">My Transformation</h2>
 
@@ -134,31 +144,80 @@
 </section>
 
 <!-- 🧃 Products (then) -->
-<section class="py-16">
+<section class="py-16 bg-white" id="products">
     <div class="mx-auto max-w-7xl px-6">
-        <div class="grid md:grid-cols-2 gap-10">
-            <div class="rounded-3xl bg-white p-8 shadow">
-                <h3 class="text-2xl font-bold">Unimate — Focus without breaking your fast</h3>
-                <ul class="mt-4 space-y-2 text-slate-700 list-disc pl-5">
-                    <li>Highly concentrated yerba mate; rich in chlorogenic acids and antioxidants</li>
-                    <li>No sugar; convenient single-serve packets</li>
-                    <li>Enjoy hot or cold, morning or between meals</li>
-                </ul>
-            </div>
-            <div class="rounded-3xl bg-white p-8 shadow">
-                <h3 class="text-2xl font-bold">Balance (Bios Life S) — Pre-meal fiber matrix</h3>
-                <ul class="mt-4 space-y-2 text-slate-700 list-disc pl-5">
-                    <li>Patented blend of soluble fibers, micronutrients & plant compounds</li>
-                    <li>Helps slow carbohydrate absorption and support healthy cholesterol/glucose</li>
-                    <li>Take 10–15 minutes before your largest meal</li>
-                </ul>
-            </div>
+        <div class="grid gap-8 md:gap-10 md:grid-cols-2">
+
+            <!-- Unimate -->
+            <article class="group rounded-3xl bg-white/90 p-6 md:p-8 shadow ring-1 ring-slate-200 transition hover:shadow-xl hover:ring-slate-300">
+                <div class="md:grid md:grid-cols-[110px,1fr] md:items-center md:gap-6">
+                    <!-- Image -->
+                    <div class="flex justify-center md:block">
+                        <div class="h-28 w-20 md:h-32 md:w-24">
+                            <img src="{{ asset('images/Unicity/Unimate.png') }}" alt="Unicity Unimate"
+                                 class="h-full w-full object-contain" />
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="mt-4 md:mt-0">
+                        <h3 class="text-xl md:text-2xl font-bold text-slate-900">
+                            Unimate — Focus without breaking your fast
+                        </h3>
+                        <ul class="mt-3 space-y-2 text-slate-700 list-disc list-inside">
+                            <li>Highly concentrated yerba mate; rich in chlorogenic acids & antioxidants</li>
+                            <li>No sugar; convenient single-serve packets</li>
+                            <li>Enjoy hot or cold, morning or between meals</li>
+                        </ul>
+
+                        <div class="mt-5">
+                            <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
+                               class="inline-flex items-center rounded-xl bg-emerald-600 px-4 py-2 text-white font-semibold shadow-sm hover:bg-emerald-700">
+                                Order Unimate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Balance (Bios Life S) -->
+            <article class="group rounded-3xl bg-white/90 p-6 md:p-8 shadow ring-1 ring-slate-200 transition hover:shadow-xl hover:ring-slate-300">
+                <div class="md:grid md:grid-cols-[110px,1fr] md:items-center md:gap-6">
+                    <!-- Image -->
+                    <div class="flex justify-center md:block">
+                        <div class="h-28 w-20 md:h-32 md:w-24">
+                            <img src="{{ asset('images/Unicity/Bios_Life_S.png') }}" alt="Unicity Balance (Bios Life S)"
+                                 class="h-full w-full object-contain" />
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="mt-4 md:mt-0">
+                        <h3 class="text-xl md:text-2xl font-bold text-slate-900">
+                            Balance (Bios Life S) — Pre-meal fiber matrix
+                        </h3>
+                        <ul class="mt-3 space-y-2 text-slate-700 list-disc list-inside">
+                            <li>Patented blend of soluble fibers, micronutrients & plant compounds</li>
+                            <li>Helps slow carbohydrate absorption; supports healthy cholesterol/glucose</li>
+                            <li>Take 10–15 minutes before your largest meal</li>
+                        </ul>
+
+                        <div class="mt-5">
+                            <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
+                               class="inline-flex items-center rounded-xl bg-emerald-600 px-4 py-2 text-white font-semibold shadow-sm hover:bg-emerald-700">
+                                Order Balance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
         </div>
     </div>
 </section>
 
 <!-- ⚙️ How it works (after products) -->
-<section id="how" class="py-16 bg-white">
+<section id="how" class="py-16 bg-emerald-50">
     <div class="mx-auto max-w-7xl px-6">
         <h2 class="text-3xl md:text-4xl font-bold">How it works</h2>
         <p class="mt-4 text-slate-600 max-w-3xl">
@@ -191,106 +250,6 @@
                      class="max-w-md md:max-w-xl w-full h-auto mx-auto">
             </div>
         </section>
-    </div>
-</section>
-
-<!-- 📖 My Story -->
-<section class="py-16" id="story">
-    <div class="mx-auto max-w-4xl px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center">My Story</h2>
-
-        <div class="mt-8 space-y-6 text-slate-700 leading-relaxed">
-            <p>Hi, I’m <strong>Kobi from Melbourne, Australia</strong>.</p>
-
-            <p>For most of my life, I battled with my weight. At my heaviest I reached
-                <strong>157 kg (346 lbs)</strong> during COVID. I was wearing <strong>8XL clothes</strong>, relying on a seatbelt extender on planes,
-                and constantly feeling embarrassed and self-conscious. I tried diets and exercise and even lost up to 10 kg, but whenever I stopped, the weight returned — sometimes even more.</p>
-
-            <p>The weight was only part of the problem. My health was deteriorating in ways that were impossible to ignore —
-                swollen ankles, gout, vertigo, sleep apnea requiring a CPAP machine, IBS, constant urination, and a cloud of depression
-                that left me feeling trapped and helpless.</p>
-
-            <p>In early <strong>2025</strong>, a loss in my immediate family became the wake-up call I desperately needed.
-                I went to the doctor for a full check-up and was diagnosed with <strong>Type 2 Diabetes</strong>.
-                My <strong>A1C was 11.3</strong>, and I was prescribed Metformin. Hearing those results was sobering,
-                but it was also the push I needed to take control.</p>
-
-            <p>I remembered seeing the <strong>Feel Great System</strong> on TikTok and decided it was time to give it a chance.
-                I ordered the products and committed fully to the protocol. The first time I tried <strong>Unimate tea</strong>,
-                I felt something shift — it gave me a sense of hope. Fasting was intimidating at first,
-                but the weight started coming off almost immediately.</p>
-
-            <p>I stopped all snacks and moved to two meals a day at 12pm and 6pm. I bought a glucose meter and each day watched my numbers steadily improve.</p>
-
-            <p>Six months later, the results have been life-changing. My <strong>Type 2 Diabetes has been reversed</strong> —
-                A1C down from <strong>11.3 (Jan) → 6.6 (May) → now 5.8 (Aug)</strong>. I’ve lost <strong>37 kg (81.5 lbs)</strong>,
-                gone from <strong>8XL to 2XL</strong>, and the conditions that once held me back — gout, vertigo, IBS,
-                and constant urination — are gone. I have more energy than ever, I actually <em>enjoy</em> going to the gym,
-                and for the first time in years, I no longer feel self-conscious.</p>
-
-            <!-- Health & Bloodwork Table -->
-            <div class="mt-8">
-                <h3 class="text-xl font-bold text-center mb-4">The changes show clearly in my health and bloodwork:</h3>
-                <div class="overflow-x-auto">
-                    <table class="min-w-full divide-y divide-slate-200 border border-slate-200 rounded-lg">
-                        <thead class="bg-slate-100">
-                        <tr>
-                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Marker</th>
-                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Before</th>
-                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Now</th>
-                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">What it means</th>
-                        </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-200 text-sm">
-                        <tr>
-                            <td class="px-4 py-3 font-medium text-slate-800">Weight</td>
-                            <td class="px-4 py-3">157 kg (346 lbs)</td>
-                            <td class="px-4 py-3 text-emerald-600 font-bold">120 kg (264 lbs)</td>
-                            <td class="px-4 py-3 text-slate-600">Losing 37 kg (81.5 lbs) reduced strain on joints, heart, and overall health.</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium text-slate-800">A1C (Blood sugar)</td>
-                            <td class="px-4 py-3">11.3</td>
-                            <td class="px-4 py-3 text-emerald-600 font-bold">5.8</td>
-                            <td class="px-4 py-3 text-slate-600">Key diabetes marker. Normal is below 5.7. Shows reversal of Type 2 Diabetes.</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium text-slate-800">Triglycerides</td>
-                            <td class="px-4 py-3">3.8</td>
-                            <td class="px-4 py-3 text-emerald-600 font-bold">1.5</td>
-                            <td class="px-4 py-3 text-slate-600">High levels increase risk of heart disease. Lower is better.</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium text-slate-800">HDL (Good cholesterol)</td>
-                            <td class="px-4 py-3">0.8</td>
-                            <td class="px-4 py-3 text-emerald-600 font-bold">0.9</td>
-                            <td class="px-4 py-3 text-slate-600">Helps remove excess cholesterol from blood. Higher is protective.</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium text-slate-800">LDL (Bad cholesterol)</td>
-                            <td class="px-4 py-3">3.4</td>
-                            <td class="px-4 py-3 text-emerald-600 font-bold">2.8</td>
-                            <td class="px-4 py-3 text-slate-600">High levels can clog arteries. Lowering reduces risk of heart disease.</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium text-slate-800">Non-HDL</td>
-                            <td class="px-4 py-3">5.1</td>
-                            <td class="px-4 py-3 text-emerald-600 font-bold">3.5</td>
-                            <td class="px-4 py-3 text-slate-600">Total cholesterol minus HDL. A strong predictor of cardiovascular risk.</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium text-slate-800">ALT (Liver enzyme)</td>
-                            <td class="px-4 py-3">46</td>
-                            <td class="px-4 py-3 text-emerald-600 font-bold">26</td>
-                            <td class="px-4 py-3 text-slate-600">Measures liver health. Lower values suggest normal liver function.</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <p class="mt-6"><strong>Today, I feel incredible.</strong> I haven’t just improved my health — I’ve regained my confidence, my energy, and my life.</p>
-        </div>
     </div>
 </section>
 
@@ -443,8 +402,108 @@
     </div>
 </section>
 
+<!-- 📖 My Story -->
+<section class="py-16 bg-slate-50" id="story">
+    <div class="mx-auto max-w-4xl px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">My Story</h2>
+
+        <div class="mt-8 space-y-6 text-slate-700 leading-relaxed">
+            <p>Hi, I’m <strong>Kobi from Melbourne, Australia</strong>.</p>
+
+            <p>For most of my life, I battled with my weight. At my heaviest I reached
+                <strong>157 kg (346 lbs)</strong> during COVID. I was wearing <strong>8XL clothes</strong>, relying on a seatbelt extender on planes,
+                and constantly feeling embarrassed and self-conscious. I tried diets and exercise and even lost up to 10 kg, but whenever I stopped, the weight returned — sometimes even more.</p>
+
+            <p>The weight was only part of the problem. My health was deteriorating in ways that were impossible to ignore —
+                swollen ankles, gout, vertigo, sleep apnea requiring a CPAP machine, IBS, constant urination, and a cloud of depression
+                that left me feeling trapped and helpless.</p>
+
+            <p>In early <strong>2025</strong>, a loss in my immediate family became the wake-up call I desperately needed.
+                I went to the doctor for a full check-up and was diagnosed with <strong>Type 2 Diabetes</strong>.
+                My <strong>A1C was 11.3</strong>, and I was prescribed Metformin. Hearing those results was sobering,
+                but it was also the push I needed to take control.</p>
+
+            <p>I remembered seeing the <strong>Feel Great System</strong> on TikTok and decided it was time to give it a chance.
+                I ordered the products and committed fully to the protocol. The first time I tried <strong>Unimate tea</strong>,
+                I felt something shift — it gave me a sense of hope. Fasting was intimidating at first,
+                but the weight started coming off almost immediately.</p>
+
+            <p>I stopped all snacks and moved to two meals a day at 12pm and 6pm. I bought a glucose meter and each day watched my numbers steadily improve.</p>
+
+            <p>Six months later, the results have been life-changing. My <strong>Type 2 Diabetes has been reversed</strong> —
+                A1C down from <strong>11.3 (Jan) → 6.6 (May) → now 5.8 (Aug)</strong>. I’ve lost <strong>37 kg (81.5 lbs)</strong>,
+                gone from <strong>8XL to 2XL</strong>, and the conditions that once held me back — gout, vertigo, IBS,
+                and constant urination — are gone. I have more energy than ever, I actually <em>enjoy</em> going to the gym,
+                and for the first time in years, I no longer feel self-conscious.</p>
+
+            <!-- Health & Bloodwork Table -->
+            <div class="mt-8">
+                <h3 class="text-xl font-bold text-center mb-4">The changes show clearly in my health and bloodwork:</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-slate-200 border border-slate-200 rounded-lg">
+                        <thead class="bg-slate-100">
+                        <tr>
+                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Marker</th>
+                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Before</th>
+                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Now</th>
+                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">What it means</th>
+                        </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 text-sm">
+                        <tr>
+                            <td class="px-4 py-3 font-medium text-slate-800">Weight</td>
+                            <td class="px-4 py-3">157 kg (346 lbs)</td>
+                            <td class="px-4 py-3 text-emerald-600 font-bold">120 kg (264 lbs)</td>
+                            <td class="px-4 py-3 text-slate-600">Losing 37 kg (81.5 lbs) reduced strain on joints, heart, and overall health.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium text-slate-800">A1C (Blood sugar)</td>
+                            <td class="px-4 py-3">11.3</td>
+                            <td class="px-4 py-3 text-emerald-600 font-bold">5.8</td>
+                            <td class="px-4 py-3 text-slate-600">Key diabetes marker. Normal is below 5.7. Shows reversal of Type 2 Diabetes.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium text-slate-800">Triglycerides</td>
+                            <td class="px-4 py-3">3.8</td>
+                            <td class="px-4 py-3 text-emerald-600 font-bold">1.5</td>
+                            <td class="px-4 py-3 text-slate-600">High levels increase risk of heart disease. Lower is better.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium text-slate-800">HDL (Good cholesterol)</td>
+                            <td class="px-4 py-3">0.8</td>
+                            <td class="px-4 py-3 text-emerald-600 font-bold">0.9</td>
+                            <td class="px-4 py-3 text-slate-600">Helps remove excess cholesterol from blood. Higher is protective.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium text-slate-800">LDL (Bad cholesterol)</td>
+                            <td class="px-4 py-3">3.4</td>
+                            <td class="px-4 py-3 text-emerald-600 font-bold">2.8</td>
+                            <td class="px-4 py-3 text-slate-600">High levels can clog arteries. Lowering reduces risk of heart disease.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium text-slate-800">Non-HDL</td>
+                            <td class="px-4 py-3">5.1</td>
+                            <td class="px-4 py-3 text-emerald-600 font-bold">3.5</td>
+                            <td class="px-4 py-3 text-slate-600">Total cholesterol minus HDL. A strong predictor of cardiovascular risk.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 font-medium text-slate-800">ALT (Liver enzyme)</td>
+                            <td class="px-4 py-3">46</td>
+                            <td class="px-4 py-3 text-emerald-600 font-bold">26</td>
+                            <td class="px-4 py-3 text-slate-600">Measures liver health. Lower values suggest normal liver function.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-6"><strong>Today, I feel incredible.</strong> I haven’t just improved my health — I’ve regained my confidence, my energy, and my life.</p>
+        </div>
+    </div>
+</section>
+
 <!-- Results teaser -->
-<section class="py-16 bg-emerald-50">
+<section class="py-16 bg-white">
     <div class="mx-auto max-w-6xl px-6 text-center">
         <h3 class="text-2xl md:text-3xl font-bold">Simple routine. Measurable changes.</h3>
         <p class="mt-4 text-slate-700 max-w-3xl mx-auto">
@@ -459,7 +518,7 @@
 </section>
 
 <!-- How to use -->
-<section class="py-16" id="use">
+<section class="py-16 bg-slate-50" id="use">
     <div class="mx-auto max-w-5xl px-6">
         <h3 class="text-2xl font-bold">How to use</h3>
         <ol class="mt-6 space-y-4 text-slate-700 list-decimal pl-6">
@@ -604,13 +663,6 @@
                 </li>
             </ul>
 
-            <!-- CTA -->
-            <div class="mt-10 text-center">
-                <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
-                   class="inline-flex items-center rounded-full bg-[#0b2a4a] px-8 py-3 text-white font-semibold shadow hover:bg-[#0d355e]">
-                    Buy now
-                </a>
-            </div>
         </div>
 
         <p class="mt-6 text-center text-xs text-slate-500">
@@ -620,7 +672,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="py-16 bg-white" id="faq">
+<section class="py-16 bg-slate-50" id="faq">
     <div class="mx-auto max-w-5xl px-6">
         <h3 class="text-2xl font-bold">FAQ</h3>
         <div class="mt-6 space-y-6">
@@ -640,10 +692,45 @@
     </div>
 </section>
 
+<!-- 📄 Feel Great Brochure -->
+<section class="py-16 bg-white" id="brochure">
+    <div class="mx-auto max-w-5xl px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+            Learn More About the Feel Great System
+        </h2>
+        <p class="mt-3 text-slate-600 max-w-2xl mx-auto">
+            A simple daily routine with two products + one practice. Here’s a quick guide that explains
+            how Unimate and Balance work together with intermittent fasting.
+        </p>
 
+        <div class="mt-10">
+            <img src="{{ asset('images/Unicity/AUS_34305_info_english.jpg') }}"
+                 alt="Feel Great System Brochure"
+                 class="rounded-2xl shadow-lg mx-auto w-full max-w-4xl object-contain">
+        </div>
+    </div>
+</section>
+<!-- 📱 QR Code Section -->
+<section class="py-16 bg-emerald-50" id="qr">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">
+            Quick Access — Order with a Scan
+        </h2>
+        <p class="mt-3 text-slate-700 max-w-2xl mx-auto">
+            Simply scan the QR code below with your phone’s camera to go directly to purchase the products.
+        </p>
 
+        <div class="mt-8 flex justify-center">
+            <div class="bg-white p-6 rounded-2xl shadow-lg">
+                <img src="{{ asset('images/Unicity/feel-great-system-qr-code.png') }}"
+                     alt="Feel Great System QR Code"
+                     class="w-48 h-48 md:w-64 md:h-64 object-contain mx-auto">
+            </div>
+        </div>
+    </div>
+</section>
 <!-- CTA -->
-<section id="buy" class="py-16">
+<section id="buy" class="py-16 bg-white">
     <div class="mx-auto max-w-6xl px-6 text-center">
         <h3 class="text-3xl font-extrabold">Ready to Feel Great?</h3>
         <p class="mt-3 text-slate-700">Keep it simple: Unimate in the morning, Balance (Bios Life S) before your biggest meal.</p>
