@@ -742,7 +742,24 @@
         <p class="mt-6 text-xs text-slate-500">*Statements not evaluated by the TGA/FDA. Not intended to diagnose, treat, cure, or prevent any disease.</p>
     </div>
 </section>
+<!-- 🌐 Socials -->
+<section class="py-12 bg-slate-50" id="socials">
+    <div class="mx-auto max-w-6xl px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Follow Me</h2>
+        <p class="mt-3 text-slate-600">Follow me on TikTok for updates, tips, and my journey with the Feel Great System.</p>
 
+        <div class="mt-6 flex justify-center gap-6">
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@feel_great_system_au" target="_blank" rel="noopener"
+               class="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-slate-700 shadow hover:bg-emerald-50 hover:border-emerald-300 transition">
+                <img src="{{ asset('images/socials/tiktok-brands-solid-full.svg') }}"
+                     alt="TikTok Logo"
+                     class="h-5 w-5">
+                <span class="font-semibold group-hover:text-emerald-700">TikTok</span>
+            </a>
+        </div>
+    </div>
+</section>
 <footer class="py-10 text-center text-sm text-slate-500">
     © {{ date('Y') }} Feel Great System Australia. All rights reserved.
 </footer>
