@@ -35,7 +35,13 @@
 {{--               class="hidden sm:inline-flex items-center rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-800 hover:bg-slate-50">--}}
 {{--                Product Catalogue--}}
 {{--            </a>--}}
-
+            <a href="https://www.tiktok.com/@feel_great_system_au" target="_blank" rel="noopener"
+               class="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-slate-700 shadow hover:bg-emerald-50 hover:border-emerald-300 transition">
+                <img src="{{ asset('images/socials/tiktok-brands-solid-full.svg') }}"
+                     alt="TikTok Logo"
+                     class="h-5 w-5">
+                <span class="font-semibold group-hover:text-emerald-700">TikTok</span>
+            </a>
             <!-- Order Now -->
             <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
                class="hidden sm:inline-flex items-center rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-emerald-700">
