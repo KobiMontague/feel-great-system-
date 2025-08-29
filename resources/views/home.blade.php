@@ -15,36 +15,18 @@
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased">
 <!-- Top bar with personal logo -->
+<!-- Simple top bar (no partials needed) -->
 <nav class="bg-white/80 backdrop-blur border-b sticky top-0 z-50">
     <div class="mx-auto max-w-7xl px-6 h-14 flex items-center justify-between">
-        <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener" class="flex items-center gap-3">
-            <img
-                src="{{ asset('images/logo/kobi_logo.png') }}"
-                alt="Kobi personal logo"
-                class="h-10 w-auto rounded-md"
-                loading="eager"
-            >
-            <span class="sr-only">Feel Great System — Kobi</span>
+        <a href="{{ url('/') }}" class="flex items-center gap-3">
+            <img src="{{ asset('images/logo/kobi_logo.png') }}" alt="Kobi logo" class="h-8 w-auto rounded">
+            <span class="font-semibold">Feel Great System</span>
         </a>
 
-        <!-- Right-side CTAs -->
         <div class="flex items-center gap-3">
-            <!-- Product Catalogue -->
-{{--            <a href="https://ushop-media.unicity.com/flip/SG_Unicity_E_Catalogue/"--}}
-{{--               target="_blank" rel="noopener"--}}
-{{--               class="hidden sm:inline-flex items-center rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-800 hover:bg-slate-50">--}}
-{{--                Product Catalogue--}}
-{{--            </a>--}}
-            <a href="https://www.tiktok.com/@feel_great_system_au" target="_blank" rel="noopener"
-               class="group flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-slate-700 shadow hover:bg-emerald-50 hover:border-emerald-300 transition">
-                <img src="{{ asset('images/socials/tiktok-brands-solid-full.svg') }}"
-                     alt="TikTok Logo"
-                     class="h-5 w-5">
-                <span class="font-semibold group-hover:text-emerald-700">TikTok</span>
-            </a>
-            <!-- Order Now -->
+            <a href="{{ url('/science') }}" class="hidden sm:inline text-sm font-semibold text-emerald-700">Science</a>
             <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
-               class="hidden sm:inline-flex items-center rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-emerald-700">
+               class="inline-flex items-center rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-emerald-700">
                 Order Now
             </a>
         </div>
@@ -68,8 +50,9 @@
                 </h1>
                 <p class="mt-5 text-lg md:text-xl text-slate-700">
                     A simple daily routine that pairs <span class="font-semibold">Unimate</span> and <span class="font-semibold">Balance (Bios Life S)</span> with
-                    time-based eating to support energy, focus, hunger control, and metabolic health.
+                    time-based eating to support energy, focus, hunger control, and metabolic health for only A$5.66 a day*, the same price as a Melbourne Coffee!
                 </p>
+                <p class="text-slate-500 text-sm mt-4 ">* A$5.66 a day (based on 3 sachets a day) August 2025, using kobi's discount link.</p>
                 <div class="mt-8 flex flex-wrap gap-3">
                     <a href="#transformation" class="inline-flex items-center rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-700">See my transformation</a>
                     <a href="#buy" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-800 hover:bg-white">Get started</a>
@@ -414,44 +397,55 @@
         <h2 class="text-3xl md:text-4xl font-bold text-center">My Story</h2>
 
         <div class="mt-8 space-y-6 text-slate-700 leading-relaxed">
-            <p>Hi, I’m <strong>Kobi from Melbourne, Australia</strong>.</p>
+            <p>Hi, I’m <strong>Kobi </strong>from Melbourne, Australia.</p>
 
-            <p>For most of my life, I battled with my weight. At my heaviest I reached
-                <strong>157 kg (346 lbs)</strong> during COVID. I was wearing <strong>8XL clothes</strong>, relying on a seatbelt extender on planes,
-                and constantly feeling embarrassed and self-conscious. I tried diets and exercise and even lost up to 10 kg, but whenever I stopped, the weight returned — sometimes even more.</p>
+            <p>For most of my life I have battled with my weight and the heaviest I reached
+                <strong>157 kg (346 lbs) </strong>in 2022 due mostly to the COVID lockdowns. I was wearing <strong>8XL clothes</strong>, relying on a seatbelt extender on planes and felt bad for anyone who sat next to me.
+                I had limited mobility and constantly feeling embarrassed and self-conscious about my weight and appearance.
+                I tried diets and exercise and even lost up to 10 kg, but whenever I stopped, the weight returned, sometimes i'd gain back even more.</p>
 
-            <p>The weight was only part of the problem. My health was deteriorating in ways that were impossible to ignore —
-                swollen ankles, gout, vertigo, sleep apnea requiring a CPAP machine, IBS, constant urination, and a cloud of depression
+            <p>The weight was only part of the problem and I knew my health was deteriorating in ways that were impossible to ignore,
+                I had <strong>Inflammation/Swollen ankles</strong> (if i pressed on them they would indent),
+                <strong>Gout</strong> (so painful) I would get it in my feet and it would last a few days I had medication to control the onsets,
+                <strong>Vertigo</strong> (so scary, my eyes would roll in my head and I couldn't stop them or control them, make you so dizzy you feel sick, the scariest thing I've experienced),
+                            <strong>Sleep Apnea</strong> requiring a CPAP machine (still use out habit now),  <strong>IBS</strong> (I though I was allergic to eggs, but I actually had IBS),
+                                    <strong>Constant Urination</strong>, and a cloud of  <strong>Depression</strong>
                 that left me feeling trapped and helpless.</p>
 
             <p>In early <strong>2025</strong>, a loss in my immediate family became the wake-up call I desperately needed.
-                I went to the doctor for a full check-up and was diagnosed with <strong>Type 2 Diabetes</strong>.
-                My <strong>A1C was 11.3</strong>, and I was prescribed Metformin. Hearing those results was sobering,
+                I went to the doctor for a full check-up and I had all my blood work done, and my weight was taken and my doctor was concerned for me.
+                When the blood results come back, the doctor wanted to go over the results in person, i knew that wasn't a good sign. He was concerned and told me that I was being diagnosed with <strong>Type 2 Diabetes</strong>.
+                My <strong>A1C was 11.3</strong> which was extremely high. The doctor said if i didnt make immediate lifestyle changes my organs and other crucial parts of my body will start to shutdown.
+                I was placed on a care plan and I was prescribed Metformin. Hearing those results was sobering,
                 but it was also the push I needed to take control.</p>
 
             <p>I remembered seeing the <strong>Feel Great System</strong> on TikTok and decided it was time to give it a chance.
                 I ordered the products and committed fully to the protocol. The first time I tried <strong>Unimate tea</strong>,
-                I felt something shift — it gave me a sense of hope. Fasting was intimidating at first,
-                but the weight started coming off almost immediately.</p>
+                I felt something shift, it gave me a lot of energy and a sense of hope. Fasting was intimidating at first, but with the Unimate tea supping during the fasting period
+                i didnt get intense hunger pains. I was hungry, but it was manageable and I knew it was working. Now after 6 months I'm actually down to one meal a day as I'm not hungry at dinnertime.
+                The weight started coming off almost pretty much straight away.</p>
 
-            <p>I stopped all snacks and moved to two meals a day at 12pm and 6pm. I bought a glucose meter and each day watched my numbers steadily improve.</p>
+            <p>I stopped all snacks, which I though would be hard because I liked watching movie with a bag of potato chips and a chocolate, but I was determined, so I've cut out all snacks in between meals.
+                I dont actually miss them tbh. If I do want to have a snack I just have it directly after my meal. So I moved to a two meals a day plan,
+                lunch at 12pm and dinner around 6pm having the fibre matrix (Bios Life S) before each meal, effectively skipping breakfast.
+                I purchased a glucose meter and each day watched my numbers steadily improve.</p>
 
-            <p>Six months later, the results have been life-changing. My <strong>Type 2 Diabetes has been reversed</strong> —
-                A1C down from <strong>11.3 (Jan) → 6.6 (May) → now 5.8 (Aug)</strong>. I’ve lost <strong>37 kg (81.5 lbs)</strong>,
-                gone from <strong>8XL to 2XL</strong>, and the conditions that once held me back — gout, vertigo, IBS,
-                and constant urination — are gone. I have more energy than ever, I actually <em>enjoy</em> going to the gym,
+            <p>Six months later, the results have been life-changing. My <strong>Type 2 Diabetes has been reversed</strong>,
+                <strong> A1C down from 11.3 (Jan) → 6.6 (May) → now 5.8 (Aug)</strong>. I’ve lost <strong>37 kg (81.5 lbs)</strong>,
+                gone from <strong>8XL to 2XL</strong>, and the conditions that once held me back, Gout, Vertigo, IBS,
+                and Constant Urination, are gone. My depression has lifted and I have more energy than ever, I actually <em>enjoy</em> going to the gym,
                 and for the first time in years, I no longer feel self-conscious.</p>
 
             <!-- Health & Bloodwork Table -->
             <div class="mt-8">
-                <h3 class="text-xl font-bold text-center mb-4">The changes show clearly in my health and bloodwork:</h3>
+                <h3 class="text-xl font-bold text-center mb-4">The changes show clearly in my health and blood work:</h3>
                 <div class="overflow-x-auto">
                     <table class="min-w-full divide-y divide-slate-200 border border-slate-200 rounded-lg">
                         <thead class="bg-slate-100">
                         <tr>
                             <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Marker</th>
-                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Before</th>
-                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Now</th>
+                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Jan 25</th>
+                            <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Aug 25</th>
                             <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">What it means</th>
                         </tr>
                         </thead>
@@ -503,7 +497,7 @@
                 </div>
             </div>
 
-            <p class="mt-6"><strong>Today, I feel incredible.</strong> I haven’t just improved my health — I’ve regained my confidence, my energy, and my life.</p>
+            <p class="mt-6"><strong>Today, I feel incredible.</strong> I haven’t just improved my health, I’ve regained my confidence, my energy, and my life.</p>
         </div>
     </div>
 </section>
@@ -684,7 +678,7 @@
         <div class="mt-6 space-y-6">
             <div>
                 <h4 class="font-semibold">Does Unimate break a fast?</h4>
-                <p class="text-slate-700">No—Unimate is designed to be taken during your fast.</p>
+                <p class="text-slate-700">No, Unimate is designed to be taken during your fast.</p>
             </div>
             <div>
                 <h4 class="font-semibold">When do I take Balance (Bios Life S)?</h4>
