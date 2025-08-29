@@ -161,13 +161,6 @@
                             <li>No sugar; convenient single-serve packets</li>
                             <li>Enjoy hot or cold, morning or between meals</li>
                         </ul>
-
-                        <div class="mt-5">
-                            <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
-                               class="inline-flex items-center rounded-xl bg-emerald-600 px-4 py-2 text-white font-semibold shadow-sm hover:bg-emerald-700">
-                                Order Unimate
-                            </a>
-                        </div>
                     </div>
                 </div>
             </article>
@@ -194,12 +187,6 @@
                             <li>Take 10–15 minutes before your largest meal</li>
                         </ul>
 
-                        <div class="mt-5">
-                            <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
-                               class="inline-flex items-center rounded-xl bg-emerald-600 px-4 py-2 text-white font-semibold shadow-sm hover:bg-emerald-700">
-                                Order Balance
-                            </a>
-                        </div>
                     </div>
                 </div>
             </article>
