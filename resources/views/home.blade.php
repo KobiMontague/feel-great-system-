@@ -55,6 +55,9 @@
                 <p class="text-slate-500 text-sm mt-4 ">* A$5.66 a day (based on 3 sachets a day) August 2025, using kobi's discount link.</p>
                 <div class="mt-8 flex flex-wrap gap-3">
                     <a href="#transformation" class="inline-flex items-center rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-700">See my transformation</a>
+
+                    <a href="{{ url('/science') }}" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white shadow hover:bg-indigo-700">Read the science</a>
+
                     <a href="#buy" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-800 hover:bg-white">Get started</a>
                 </div>
                 <ul class="mt-6 space-y-2 text-sm text-slate-600">
