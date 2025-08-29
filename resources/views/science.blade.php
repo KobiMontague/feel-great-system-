@@ -163,6 +163,46 @@
         </div>
     </div>
 </section>
+<!-- University of Sydney – Blood Glucose & Insulin Study -->
+<section id="sydney-study" class="py-16 bg-white">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 items-center">
+        <!-- Figure -->
+        <div class="flex justify-center">
+            <img
+                src="{{ asset('images/science/sydney_glucose_insulin.png') }}"
+                alt=" a University of Sydney study: blood glucose and insulin response with Bios Life"
+                class="rounded-xl shadow-lg w-full max-w-xl object-contain"
+            >
+        </div>
+
+        <!-- Copy -->
+        <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
+                University of Sydney: Blood Glucose & Insulin Study
+            </h2>
+            <p class="mt-4 text-slate-700 leading-relaxed">
+                Researchers evaluated how the phytonutrient combination in <span class="font-semibold">Bios Life</span> affects
+                post-prandial blood glucose and insulin responses after white bread.
+            </p>
+
+            <ul class="mt-4 space-y-2 text-slate-700 list-disc pl-5">
+                <li><span class="font-semibold">1 serving</span> of Bios Life reduced blood glucose by <span class="font-semibold">20%</span> and blood insulin by <span class="font-semibold">13%</span>.</li>
+                <li><span class="font-semibold">2 servings</span> reduced blood glucose by <span class="font-semibold">28%</span> and blood insulin by <span class="font-semibold">27%</span>.</li>
+            </ul>
+
+            <p class="mt-3 text-slate-600">
+                Lowering post-meal glucose and insulin excursions is beneficial for metabolic and cardiometabolic health.
+            </p>
+
+            <div class="mt-6">
+                <a href="{{ asset('docs/Bios-Life-University-of-Syndey-Study-2011-v2.pdf') }}" target="_blank" rel="noopener"
+                   class="inline-flex items-center rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-700">
+                    View Full Study
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- CTA -->
 <section class="py-16 bg-white">
     <div class="mx-auto max-w-6xl px-6 text-center">
