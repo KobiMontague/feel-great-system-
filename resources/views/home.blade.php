@@ -92,7 +92,7 @@
             <!-- Before -->
             <div class="bg-white rounded-2xl shadow p-4 text-center flex flex-col items-center">
                 <div class="w-72 h-96 overflow-hidden rounded-xl">
-                    <img src="{{ asset('images/transformation/before3.jpg') }}"
+                    <img src="{{ asset('images/transformation/before1.jpg') }}"
                          alt="Before photo"
                          class="w-full h-full object-cover">
                 </div>
@@ -103,7 +103,7 @@
             <!-- After -->
             <div class="bg-white rounded-2xl shadow p-4 text-center flex flex-col items-center">
                 <div class="w-72 h-96 overflow-hidden rounded-xl">
-                    <img src="{{ asset('images/transformation/After2.jpg') }}"
+                    <img src="{{ asset('images/transformation/After5.jpg') }}"
                          alt="After photo"
                          class="w-full h-full object-cover">
                 </div>
@@ -113,23 +113,32 @@
         </div>
 
         <!-- A1C / health summary -->
-        <div class="mt-10 bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8 text-center shadow-sm">
+        <div class="mt-10 border border-slate-200 rounded-2xl p-6 md:p-8 text-center shadow-sm bg-emerald-50"">
             <h3 class="text-xl font-bold">A1C 11.3 → 6.6 → <span class="text-emerald-600">5.8</span> — Type 2 Diabetes Reversed</h3>
             <p class="mt-3 text-slate-700">
                 Triglycerides 3.8 → 1.5 • HDL 0.8 → 0.9 • LDL 3.4 → 2.8 • Non-HDL 5.1 → 3.5 • ALT 46 → 26
             </p>
         </div>
+        <!-- Other Before and After Photos -->
+        <div class="mt-16">
+            <h4 class="text-2xl font-bold text-center text-gray-800 mb-10">
+                Other Before and After Photos
+            </h4>
 
-        <!-- Other before photos (matched sizing) -->
-        <div class="mt-10">
-            <h4 class="text-xl font-semibold text-center mb-6">Other Before Photos</h4>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
-                <div class="w-72 h-96 overflow-hidden rounded-xl shadow">
-                    <img src="{{ asset('images/transformation/before1.jpg') }}" alt="Before photo 1" class="w-full h-full object-cover">
-                </div>
-                <div class="w-72 h-96 overflow-hidden rounded-xl shadow">
-                    <img src="{{ asset('images/transformation/before2.PNG') }}" alt="Before photo 2" class="w-full h-full object-cover">
-                </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
+                @foreach ([
+                    'before3.jpg' => 'Before photo 1',
+                    'After2.jpg'  => 'After photo 1',
+                    'before2.jpg' => 'Before photo 2',
+                ] as $file => $alt)
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
+                        <img
+                            src="{{ asset('images/transformation/' . $file) }}"
+                            alt="{{ $alt }}"
+                            class="w-full aspect-[3/4] object-cover"
+                        >
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
