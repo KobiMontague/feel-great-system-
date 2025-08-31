@@ -4,10 +4,6 @@
 @section('og_title', 'Feel Great System by Unicity')
 
 @section('content')
-    {{-- Announcement (from old page) --}}
-    <div class="bg-emerald-600 text-white text-center py-2 text-sm">
-        Two products + one practice = a simpler way to feel great.
-    </div>
 
     <!-- Hero -->
     <header class="relative overflow-hidden">
