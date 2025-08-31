@@ -115,4 +115,6 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    'partnership_notify' => env('PARTNERSHIP_NOTIFY_EMAIL', 'kobi@feel-great-system.com.au'),
+
 ];
