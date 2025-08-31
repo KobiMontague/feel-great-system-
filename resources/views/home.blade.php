@@ -4,6 +4,11 @@
 @section('og_title', 'Feel Great System by Unicity')
 
 @section('content')
+    {{-- Announcement (from old page) --}}
+    <div class="bg-emerald-600 text-white text-center py-2 text-sm">
+        Two products + one practice = a simpler way to feel great.
+    </div>
+
     <!-- Hero -->
     <header class="relative overflow-hidden">
         <div class="mx-auto max-w-7xl px-6 pt-16 pb-16 md:pt-24 md:pb-24">
@@ -24,6 +29,7 @@
                         <a href="#transformation" class="inline-flex items-center rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-700">See my transformation</a>
                         <a href="{{ url('/science') }}" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white shadow hover:bg-indigo-700">Read the science</a>
                         <a href="#buy" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-800 hover:bg-white">Get started</a>
+                        <a href="#testimonials" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-800 hover:bg-white">Testimonials</a>
                     </div>
                     <ul class="mt-6 space-y-2 text-sm text-slate-600">
                         <li>• Morning focus without breaking your fast</li>
@@ -40,13 +46,14 @@
         </div>
     </header>
 
-    <!-- Social proof / badges (optional) -->
+    <!-- Social proof / badges -->
     <section class="py-8">
         <div class="mx-auto max-w-6xl px-6 text-center">
             <p class="text-slate-500 text-sm">Backed by Unicity research & clinical validation.*</p>
         </div>
     </section>
 
+    <!-- Transformation -->
     <!-- 🔥 Transformation FIRST -->
     <section class="py-16 bg-slate-50" id="transformation">
         <div class="mx-auto max-w-7xl px-6">
@@ -111,7 +118,7 @@
         </div>
     </section>
 
-    <!-- 🧃 Products -->
+    <!-- Products -->
     <section class="py-16 bg-white" id="products">
         <div class="mx-auto max-w-7xl px-6">
             <div class="grid gap-8 md:gap-10 md:grid-cols-2">
@@ -126,7 +133,7 @@
                             <h3 class="text-xl md:text-2xl font-bold text-slate-900">Unimate — Focus without breaking your fast</h3>
                             <ul class="mt-3 space-y-2 text-slate-700 list-disc list-inside">
                                 <li>Highly concentrated yerba mate; rich in chlorogenic acids & antioxidants</li>
-                                <li>No sugar; convenient single-serve packets</li>
+                                <li>convenient single-serve packets, No sugar; </li>
                                 <li>Enjoy hot or cold, morning or between meals</li>
                             </ul>
                         </div>
@@ -154,7 +161,7 @@
         </div>
     </section>
 
-    <!-- ⚙️ How it works -->
+    <!-- How it works -->
     <section id="how" class="py-16 bg-emerald-50">
         <div class="mx-auto max-w-7xl px-6">
             <h2 class="text-3xl md:text-4xl font-bold">How it works</h2>
@@ -190,7 +197,8 @@
         </div>
     </section>
 
-    <!-- 📊 Blood Marker Explanations -->
+
+    <!-- Blood Marker Explanations -->
     <section id="markers" class="py-16 bg-white">
         <div class="mx-auto max-w-5xl px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center">Understanding the Blood Markers</h2>
@@ -243,15 +251,113 @@
         </div>
     </section>
 
-    <!-- 📖 My Story -->
+    <!-- My Story (full content restored) -->
     <section class="py-16 bg-slate-50" id="story">
         <div class="mx-auto max-w-4xl px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center">My Story</h2>
 
             <div class="mt-8 space-y-6 text-slate-700 leading-relaxed">
-                <p>Hi, I’m <strong>Kobi</strong> from Melbourne, Australia.</p>
-                <!-- (story content unchanged; kept from your version) -->
-                {!! /* keep the rest of your story + health table exactly as in your message */ '' !!}
+                <p>Hi, I’m <strong>Kobi </strong>from Melbourne, Australia.</p>
+
+                <p>For most of my life I have battled with my weight and the heaviest I reached
+                    <strong>157 kg (346 lbs) </strong>in 2022 due mostly to the COVID lockdowns. I was wearing <strong>8XL clothes</strong>, relying on a seatbelt extender on planes and felt bad for anyone who sat next to me.
+                    I had limited mobility and constantly feeling embarrassed and self-conscious about my weight and appearance.
+                    I tried diets and exercise and even lost up to 10 kg, but whenever I stopped, the weight returned, sometimes i'd gain back even more.</p>
+
+                <p>The weight was only part of the problem and I knew my health was deteriorating in ways that were impossible to ignore,
+                    I had <strong>Inflammation/Swollen ankles</strong> (if i pressed on them they would indent),
+                    <strong>Gout</strong> (so painful) I would get it in my feet and it would last a few days I had medication to control the onsets,
+                    <strong>Vertigo</strong> (so scary, my eyes would roll in my head and I couldn't stop them or control them, make you so dizzy you feel sick, the scariest thing I've experienced),
+                    <strong>Sleep Apnea</strong> requiring a CPAP machine (still use out habit now),  <strong>IBS</strong> (I though I was allergic to eggs, but I actually had IBS),
+                    <strong>Constant Urination</strong>, and a cloud of  <strong>Depression</strong>
+                    that left me feeling trapped and helpless.</p>
+
+                <p>In early <strong>2025</strong>, a loss in my immediate family became the wake-up call I desperately needed.
+                    I went to the doctor for a full check-up and I had all my blood work done, and my weight was taken and my doctor was concerned for me.
+                    When the blood results come back, the doctor wanted to go over the results in person, i knew that wasn't a good sign. He was concerned and told me that I was being diagnosed with <strong>Type 2 Diabetes</strong>.
+                    My <strong>A1C was 11.3</strong> which was extremely high. The doctor said if i didnt make immediate lifestyle changes my organs and other crucial parts of my body will start to shutdown.
+                    I was placed on a care plan and I was prescribed Metformin. Hearing those results was sobering,
+                    but it was also the push I needed to take control.</p>
+
+                <p>I remembered seeing the <strong>Feel Great System</strong> on TikTok and decided it was time to give it a chance.
+                    I ordered the products and committed fully to the protocol. The first time I tried <strong>Unimate tea</strong>,
+                    I felt something shift, it gave me a lot of energy and a sense of hope. Fasting was intimidating at first, but with the Unimate tea supping during the fasting period
+                    i didnt get intense hunger pains. I was hungry, but it was manageable and I knew it was working. Now after 6 months I'm actually down to one meal a day as I'm not hungry at dinnertime.
+                    The weight started coming off almost pretty much straight away.</p>
+
+                <p>I stopped all snacks, which I though would be hard because I liked watching movie with a bag of potato chips and a chocolate, but I was determined, so I've cut out all snacks in between meals.
+                    I dont actually miss them tbh. If I do want to have a snack I just have it directly after my meal. So I moved to a two meals a day plan,
+                    lunch at 12pm and dinner around 6pm having the fibre matrix (Bios Life S) before each meal, effectively skipping breakfast.
+                    I purchased a glucose meter and each day watched my numbers steadily improve.</p>
+
+                <p>Six months later, the results have been life-changing. My <strong>Type 2 Diabetes has been reversed</strong>,
+                    <strong> A1C down from 11.3 (Jan) → 6.6 (May) → now 5.8 (Aug)</strong>. I’ve lost <strong>37 kg (81.5 lbs)</strong>,
+                    gone from <strong>8XL to 2XL</strong>, and the conditions that once held me back, Gout, Vertigo, IBS,
+                    and Constant Urination, are gone. My depression has lifted and I have more energy than ever, I actually <em>enjoy</em> going to the gym,
+                    and for the first time in years, I no longer feel self-conscious.</p>
+
+                <!-- Health & Bloodwork Table -->
+                <div class="mt-8">
+                    <h3 class="text-xl font-bold text-center mb-4">The changes show clearly in my health and blood work:</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-slate-200 border border-slate-200 rounded-lg">
+                            <thead class="bg-slate-100">
+                            <tr>
+                                <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Marker</th>
+                                <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Jan 25</th>
+                                <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Aug 25</th>
+                                <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">What it means</th>
+                            </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 text-sm">
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-800">Weight</td>
+                                <td class="px-4 py-3">157 kg (346 lbs)</td>
+                                <td class="px-4 py-3 text-emerald-600 font-bold">120 kg (264 lbs)</td>
+                                <td class="px-4 py-3 text-slate-600">Losing 37 kg (81.5 lbs) reduced strain on joints, heart, and overall health.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-800">A1C (Blood sugar)</td>
+                                <td class="px-4 py-3">11.3</td>
+                                <td class="px-4 py-3 text-emerald-600 font-bold">5.8</td>
+                                <td class="px-4 py-3 text-slate-600">Key diabetes marker. Normal is below 6.0, Shows reversal of Type 2 Diabetes.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-800">Triglycerides</td>
+                                <td class="px-4 py-3">3.8</td>
+                                <td class="px-4 py-3 text-emerald-600 font-bold">1.5</td>
+                                <td class="px-4 py-3 text-slate-600">High levels increase risk of heart disease. Lower is better.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-800">HDL (Good cholesterol)</td>
+                                <td class="px-4 py-3">0.8</td>
+                                <td class="px-4 py-3 text-emerald-600 font-bold">0.9</td>
+                                <td class="px-4 py-3 text-slate-600">Helps remove excess cholesterol from blood. Higher is protective.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-800">LDL (Bad cholesterol)</td>
+                                <td class="px-4 py-3">3.4</td>
+                                <td class="px-4 py-3 text-emerald-600 font-bold">2.8</td>
+                                <td class="px-4 py-3 text-slate-600">High levels can clog arteries. Lowering reduces risk of heart disease.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-800">Non-HDL</td>
+                                <td class="px-4 py-3">5.1</td>
+                                <td class="px-4 py-3 text-emerald-600 font-bold">3.5</td>
+                                <td class="px-4 py-3 text-slate-600">Total cholesterol minus HDL. A strong predictor of cardiovascular risk.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-slate-800">ALT (Liver enzyme)</td>
+                                <td class="px-4 py-3">46</td>
+                                <td class="px-4 py-3 text-emerald-600 font-bold">26</td>
+                                <td class="px-4 py-3 text-slate-600">Measures liver health. Lower values suggest normal liver function.</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <p class="mt-6"><strong>Today, I feel incredible.</strong> I haven’t just improved my health, I’ve regained my confidence, my energy, and my life.</p>
             </div>
         </div>
     </section>
@@ -283,19 +389,158 @@
         </div>
     </section>
 
-    <!-- Daily Timeline -->
+    <!-- Daily Timeline (restored) -->
     <section id="timeline" class="py-16 bg-white">
-        {{-- (timeline content unchanged) --}}
-        {!! '' !!}
+        <div class="mx-auto max-w-5xl px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center">Daily Timeline (16:8 Example)</h2>
+            <p class="mt-2 text-center text-slate-600">
+                Adjust the times to suit your routine. Balance (Bios Life S) before meals, Unimate in your fasting window.
+            </p>
+
+            <div class="mt-10 relative">
+                <div class="absolute left-4 top-0 bottom-0 w-2 rounded-full bg-gradient-to-b from-[#0b1e3a] via-[#93c5fd] to-[#fde68a]"></div>
+
+                <ul class="space-y-8">
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">5–7pm</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Balance (Bios Life S) + dinner</p>
+                                <p class="text-sm text-slate-600">Take <span class="font-medium">Balance</span> 10–15 minutes before dinner.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">8pm</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Fasting starts</p>
+                                <p class="text-sm text-slate-600">Begin your overnight fast (water, plain tea/coffee as desired).</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">Midnight</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Blood sugar normalises</p>
+                                <p class="text-sm text-slate-600">Your body continues shifting from fed to fasted state.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">2am</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Insulin levels drop</p>
+                                <p class="text-sm text-slate-600">Lower insulin supports access to stored energy.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">4am</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Glucagon is released</p>
+                                <p class="text-sm text-slate-600">Signals your body to mobilise stored fuel.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">6am</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Digestive system resets</p>
+                                <p class="text-sm text-slate-600">Fasting window continues; hydration encouraged.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">7–9am</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Unimate (Lemon)</p>
+                                <p class="text-sm text-slate-600">Sip during your fast to support focus and satiety.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">8am</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Fat burning ramps up</p>
+                                <p class="text-sm text-slate-600">Growth hormone rises; your body leans on stored fuel.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">10am</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Body intensifies fat burning</p>
+                                <p class="text-sm text-slate-600">Stay hydrated; enjoy Unimate if desired.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative pl-16">
+                        <span class="absolute left-4 -translate-x-1/2 top-1 h-3 w-3 rounded-full bg-emerald-600 ring-4 ring-emerald-100"></span>
+                        <div class="flex flex-col md:flex-row md:items-center md:gap-6">
+                            <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">Noon</div>
+                            <div class="rounded-2xl bg-slate-50 p-4 shadow">
+                                <p class="font-semibold">Balance (Bios Life S) + lunch (fasting ends)</p>
+                                <p class="text-sm text-slate-600">Take <span class="font-medium">Balance (Bios Life S)</span> 10–15 minutes before your first meal.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="mt-6 text-center text-xs text-slate-500">
+                This timeline illustrates a typical 16:8 schedule. Not medical advice; consult your healthcare professional.
+            </p>
+        </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- FAQ (restored) -->
     <section class="py-16 bg-slate-50" id="faq">
-        {{-- (FAQ content unchanged) --}}
-        {!! '' !!}
+        <div class="mx-auto max-w-5xl px-6">
+            <h3 class="text-2xl font-bold">FAQ</h3>
+            <div class="mt-6 space-y-6">
+                <div>
+                    <h4 class="font-semibold">Does Unimate break a fast?</h4>
+                    <p class="text-slate-700">No, Unimate is designed to be taken during your fast.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold">When do I take Balance (Bios Life S)?</h4>
+                    <p class="text-slate-700">10–15 minutes before your largest meal; you can also use it before other meals as needed.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold">Is there caffeine?</h4>
+                    <p class="text-slate-700">Unimate contains naturally occurring caffeine from yerba mate.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- 📄 Feel Great Brochure -->
+    <!-- Feel Great Brochure -->
     <section class="py-16 bg-white" id="brochure">
         <div class="mx-auto max-w-5xl px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Learn More About the Feel Great System</h2>
@@ -310,7 +555,7 @@
         </div>
     </section>
 
-    <!-- 📱 QR Code Section -->
+    <!-- QR Code -->
     <section class="py-16 bg-emerald-50" id="qr">
         <div class="mx-auto max-w-4xl px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Quick Access — Order with a Scan</h2>
@@ -336,7 +581,8 @@
             <p class="mt-6 text-xs text-slate-500">*Statements not evaluated by the TGA/FDA. Not intended to diagnose, treat, cure, or prevent any disease.</p>
         </div>
     </section>
-    <!-- 🤝 Partner Callout (simple) -->
+
+    <!-- Partner Callout -->
     <section class="py-12 bg-emerald-50">
         <div class="mx-auto max-w-6xl px-6 text-center">
             <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Interested in a business opportunity?</h3>
@@ -352,7 +598,7 @@
         </div>
     </section>
 
-    <!-- 🌐 Socials -->
+    <!-- Socials -->
     <section class="py-12 bg-slate-50" id="socials">
         <div class="mx-auto max-w-6xl px-6 text-center">
             <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Follow Me</h2>
