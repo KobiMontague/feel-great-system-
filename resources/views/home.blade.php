@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Feel Great System by Unicity')
-@section('og_title', 'Feel Great System by Unicity')
+@section('title', 'Feel Great System')
+
 
 @section('content')
 
