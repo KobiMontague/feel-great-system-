@@ -25,7 +25,6 @@
                         <a href="#transformation" class="inline-flex items-center rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-700">See my transformation</a>
                         <a href="{{ url('/science') }}" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white shadow hover:bg-indigo-700">Read the science</a>
                         <a href="#buy" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-800 hover:bg-white">Get started</a>
-                        <a href="#testimonials" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-800 hover:bg-white">Testimonials</a>
                     </div>
                     <ul class="mt-6 space-y-2 text-sm text-slate-600">
                         <li>• Morning focus without breaking your fast</li>

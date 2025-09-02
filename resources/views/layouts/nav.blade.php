@@ -13,5 +13,14 @@
                 Order Now
             </a>
         </div>
+        @auth
+            @if(auth()->user()->is_admin ?? false)
+                <a href="{{ route('admin.leads.index') }}" class="text-sm font-semibold text-emerald-700">Leads</a>
+            @endif
+            <form method="POST" action="{{ route('logout') }}" class="inline">
+                @csrf
+                <button class="text-sm font-semibold text-slate-700 hover:text-emerald-700">Log out</button>
+            </form>
+        @endauth
     </div>
 </nav>

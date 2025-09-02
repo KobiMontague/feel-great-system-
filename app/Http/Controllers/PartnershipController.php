@@ -24,16 +24,18 @@ class PartnershipController extends Controller
             'company' => ['nullable', 'max:120'], // honeypot
         ]);
 
-        // Simple honeypot: if filled, pretend success
+        // Honeypot: if filled, pretend success (do not send emails)
         if (!empty($data['company'])) {
             return back()->with('success', 'Thanks — we’ve received your details.');
         }
 
-        // Look up by email
+        // Find by email
         $existing = Lead::where('email', $data['email'])->first();
 
+        // Admin email to notify
+        $adminEmail = env('PARTNERSHIP_NOTIFY_EMAIL', config('mail.from.address'));
+
         if ($existing) {
-            // Keep the original created_at and update other fields
             $firstCreated = $existing->created_at;
 
             $existing->fill([
@@ -43,10 +45,19 @@ class PartnershipController extends Controller
                 'user_agent' => (string) $request->header('User-Agent'),
             ])->save();
 
-            // Format the original date for the banner
+            // 👉 Send notification that an existing lead updated (optional but useful)
+            if ($adminEmail) {
+                Notification::route('mail', $adminEmail)
+                    ->notify(new PartnershipLeadNotification($existing));
+            }
+
             $when = $firstCreated
                 ? $firstCreated->timezone(config('app.timezone', 'UTC'))->format('j M Y')
                 : now()->timezone(config('app.timezone', 'UTC'))->format('j M Y');
+
+            // 👉 Thank the lead (optional for updates; keep if you want)
+            Notification::route('mail', $existing->email)
+                ->notify(new PartnershipLeadThanks($existing));
 
             return back()->with(
                 'success',
@@ -55,13 +66,26 @@ class PartnershipController extends Controller
         }
 
         // New lead
-        Lead::create([
+        $lead = Lead::create([
             'name'       => $data['name'],
             'email'      => $data['email'],
             'phone'      => $data['phone'],
             'ip'         => $request->ip(),
             'user_agent' => (string) $request->header('User-Agent'),
+            // If you added these columns, they’ll save too (safe to leave if not):
+            'status'     => 'new',
+            'notes'      => null,
         ]);
+
+        // 👉 Notify admin
+        if ($adminEmail) {
+            Notification::route('mail', $adminEmail)
+                ->notify(new PartnershipLeadNotification($lead));
+        }
+
+        // 👉 Thank the lead
+        Notification::route('mail', $lead->email)
+            ->notify(new PartnershipLeadThanks($lead));
 
         return back()->with('success', 'Thanks — we’ve received your details.');
     }
