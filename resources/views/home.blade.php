@@ -25,6 +25,9 @@
                         <a href="#transformation" class="inline-flex items-center rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-700">See my transformation</a>
                         <a href="{{ url('/science') }}" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white shadow hover:bg-indigo-700">Read the science</a>
                         <a href="#buy" class="inline-flex items-center rounded-xl border border-slate-300 px-5 py-3 font-semibold text-slate-800 hover:bg-white">Get started</a>
+                        <a href="#comparison" class="inline-flex items-center rounded-xl bg-teal-600 px-5 py-3 font-semibold text-white shadow hover:bg-teal-700">
+                            Compare with medications
+                        </a>
                     </div>
                     <ul class="mt-6 space-y-2 text-sm text-slate-600">
                         <li>• Morning focus without breaking your fast</li>
@@ -547,6 +550,68 @@
             <div class="mt-10">
                 <img src="{{ asset('images/Unicity/AUS_34305_info_english.jpg') }}" alt="Feel Great System Brochure" class="rounded-2xl shadow-lg mx-auto w-full max-w-4xl object-contain">
             </div>
+        </div>
+    </section>
+    <!-- Comparison: Pharmaceuticals vs Nutraceutical -->
+    <section id="comparison" class="py-16 bg-slate-50">
+        <div class="mx-auto max-w-6xl px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-900">
+                How This Compares to Pharmaceuticals
+            </h2>
+            <p class="mt-4 text-center text-slate-700 max-w-3xl mx-auto">
+                Many people today are turning to prescription medications such as
+                <strong>GLP-1 receptor agonists</strong> (semaglutide, tirzepatide) or
+                <strong>biguanides</strong> for weight or blood sugar control.
+                These medicines can be effective, but they are also associated with
+                well-documented side effects.
+            </p>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2">
+                <div class="bg-white rounded-2xl shadow p-6 border border-slate-200">
+                    <h3 class="text-xl font-bold text-red-600">Pharmaceutical Side Effects</h3>
+                    <ul class="mt-4 space-y-2 text-slate-700 list-disc list-inside text-sm">
+                        <li><strong>GLP-1 receptor agonists</strong> (e.g. semaglutide): nausea, vomiting, diarrhoea,
+                            constipation, abdominal pain, belching (“sulphur burps”), headache, fatigue,
+                            risk of gallstones, pancreatitis, intestinal blockage, worsening of diabetic retinopathy.</li>
+                        <li><strong>Duale GIP/GLP-1 agonists</strong> (e.g. tirzepatide): similar GI side effects plus increased risk
+                            of gallbladder issues and gastrointestinal discomfort.</li>
+                        <li><strong>Metformin</strong> (biguanide): diarrhoea, nausea, bloating, abdominal pain, metallic taste,
+                            vitamin B12 deficiency with long-term use, rare but serious risk of lactic acidosis.</li>
+                    </ul>
+                    <p class="mt-4 text-xs text-slate-500">
+                        Source: prescribing information, clinical trial data, professional medical references.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow p-6 border border-slate-200">
+                    <h3 class="text-xl font-bold text-emerald-600">The Feel Great system (Nutraceutical Alternative)</h3>
+                    <p class="mt-4 text-slate-700 text-sm">
+                        The Feel Great System is built on <strong>food-based nutraceuticals</strong>:
+                        a concentrated yerba mate beverage and a pre-meal fibre matrix.
+                    </p>
+                    <ul class="mt-4 space-y-2 text-slate-700 list-disc list-inside text-sm">
+                        <li>No nausea, vomiting, or “sulphur burps”</li>
+                        <li>No risk of pancreatitis or gallstones</li>
+                        <li>No risk of lactic acidosis or B12 deficiency</li>
+                        <li>Generally well tolerated, with only mild digestive adjustment possible when first increasing fibre intake</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-slate-700">
+                        These products are <strong>nutritional supplements, not pharmaceuticals</strong>. They are listed in
+                        professional resources such as the <em>Prescriber’s Digital Reference (PDR)</em> and can be used
+                        as part of a sustainable daily routine.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#buy" class="inline-flex items-center rounded-xl bg-emerald-600 px-6 py-3 text-white font-semibold shadow hover:bg-emerald-700">
+                    Start your Feel Great routine
+                </a>
+            </div>
+
+            <p class="mt-6 text-xs text-slate-500 text-center">
+                *For educational purposes only. Not medical advice. Always consult your healthcare professional before changing medication or supplement use.
+            </p>
         </div>
     </section>
 
