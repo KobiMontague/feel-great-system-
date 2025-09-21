@@ -32,6 +32,9 @@
                         <a href="#comparison" class="inline-flex items-center rounded-xl bg-teal-600 px-5 py-3 font-semibold text-white shadow hover:bg-teal-700">
                             Compare with medications
                         </a>
+                        <a href="{{ route('insulin-resistance') }}" class="inline-flex items-center rounded-xl bg-teal-600 px-5 py-3 font-semibold text-white shadow hover:bg-teal-700">
+                            What is insulin resistance?
+                        </a>
                     </div>
                     <ul class="mt-6 space-y-2 text-sm text-slate-600">
                         <li>• Morning focus without breaking your fast</li>

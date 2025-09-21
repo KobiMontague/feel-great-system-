@@ -6,20 +6,33 @@
         </a>
 
         <div class="flex items-center gap-3">
-            <a href="{{ url('/science') }}" class="hidden sm:inline text-sm font-semibold text-emerald-700">Science</a>
-            <a href="{{ url('/partnership') }}" class="hidden sm:inline text-sm font-semibold text-emerald-700">Partnership</a>
+            <a href="{{ url('/science') }}" class="hidden sm:inline text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                Science
+            </a>
+            <a href="{{ url('/partnership') }}" class="hidden sm:inline text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                Partnership
+            </a>
+            <a href="{{ route('insulin-resistance') }}" class="hidden sm:inline text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                What is insulin resistance
+            </a>
+
             <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
                class="inline-flex items-center rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-emerald-700">
                 Order Now
             </a>
         </div>
+
         @auth
             @if(auth()->user()->is_admin ?? false)
-                <a href="{{ route('admin.leads.index') }}" class="text-sm font-semibold text-emerald-700">Leads</a>
+                <a href="{{ route('admin.leads.index') }}" class="text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                    Leads
+                </a>
             @endif
             <form method="POST" action="{{ route('logout') }}" class="inline">
                 @csrf
-                <button class="text-sm font-semibold text-slate-700 hover:text-emerald-700">Log out</button>
+                <button class="text-sm font-semibold text-slate-700 hover:text-emerald-700">
+                    Log out
+                </button>
             </form>
         @endauth
     </div>
