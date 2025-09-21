@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Feel Great System')
-
+@section('title', 'Weight Loss, Insulin Resistance & A1C | Feel Great System (Australia)')
+@section('meta_description', 'Learn how a natural daily routine supports weight loss, insulin resistance and healthier A1C. See my type 2 diabetes remission story and bloodwork improvements.')
+@section('og_title', 'Weight Loss, Insulin Resistance & A1C | Feel Great System')
+@section('og_description', 'Natural routine supporting weight loss, insulin resistance and A1C. Read the story, view results, and learn the science.')
+@section('twitter_title', 'Weight Loss, Insulin Resistance & A1C')
+@section('twitter_description', 'Natural support for weight loss, insulin resistance and A1C. See results and learn more.')
 
 @section('content')
 
@@ -18,7 +22,7 @@
                     </h2>
                     <p class="mt-5 text-lg md:text-xl text-slate-700">
                         A simple daily routine that pairs <span class="font-semibold">Unimate</span> and <span class="font-semibold">Balance (Bios Life S)</span> with
-                        time-based eating to support energy, focus, hunger control, and metabolic health for only A$5.66 a day*, the same price as a Melbourne Coffee!
+                        time-based eating to support energy, focus, hunger control, and metabolic health for only A$5.66 a day*, the same price as a Melbourne coffee!
                     </p>
                     <p class="text-slate-500 text-sm mt-4">* A$5.66 a day (based on 3 sachets a day) August 2025, using Kobi's discount link.</p>
                     <div class="mt-8 flex flex-wrap gap-3">
@@ -31,7 +35,7 @@
                     </div>
                     <ul class="mt-6 space-y-2 text-sm text-slate-600">
                         <li>• Morning focus without breaking your fast</li>
-                        <li>• Pre-meal fiber matrix to blunt carb impact</li>
+                        <li>• Pre-meal fibre matrix to blunt carb impact</li>
                         <li>• Designed to make intermittent fasting easier</li>
                     </ul>
                 </div>
@@ -52,7 +56,6 @@
     </section>
 
     <!-- Transformation -->
-    <!-- 🔥 Transformation FIRST -->
     <section class="py-16 bg-slate-50" id="transformation">
         <div class="mx-auto max-w-7xl px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center">My Transformation</h2>
@@ -66,7 +69,7 @@
                         <div class="absolute inset-0" aria-hidden="true"></div>
                     </div>
                     <p class="mt-3 text-xl font-bold text-red-600">Before</p>
-                    <p class="mt-1 text-lg font-semibold text-slate-700">157 kg (330.6 lbs)</p>
+                    <p class="mt-1 text-lg font-semibold text-slate-700">157 kg (346.1 lbs)</p>
                 </div>
 
                 <div class="bg-white rounded-2xl shadow p-4 text-center flex flex-col items-center">
@@ -78,12 +81,12 @@
                     </div>
 
                     <p class="mt-3 text-xl font-bold text-emerald-600">After</p>
-                    <p class="mt-1 text-lg font-semibold text-slate-700">120 kg (264.5 lbs)</p>
+                    <p class="mt-1 text-lg font-semibold text-slate-700">119 kg (262.3 lbs)</p>
                 </div>
             </div>
 
             <div class="mt-10 border border-slate-200 rounded-2xl p-6 md:p-8 text-center shadow-sm bg-emerald-50">
-                <h3 class="text-xl font-bold">A1C 11.3 → 6.6 → <span class="text-emerald-600">5.8</span> — Type 2 Diabetes Reversed</h3>
+                <h3 class="text-xl font-bold">A1C 11.3 → 6.6 → <span class="text-emerald-600">5.8</span> - Type 2 Diabetes Reversed</h3>
                 <p class="mt-3 text-slate-700">
                     Triglycerides 3.8 → 1.5 • HDL 0.8 → 0.9 • LDL 3.4 → 2.8 • Non-HDL 5.1 → 3.5 • ALT 46 → 26
                 </p>
@@ -100,14 +103,12 @@
                         'before2.jpg' => 'Before photo 2',
                     ] as $file => $alt)
                         <div class="relative bg-white rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-lg">
-                            <!-- Background image instead of <img> -->
                             <div class="aspect-[3/4] bg-cover bg-center"
                                  style="background-image: url('{{ asset('images/transformation/' . $file) }}');
                             -webkit-touch-callout:none;
                             -webkit-user-select:none;
                             user-select:none;">
                             </div>
-                            <!-- Optional overlay to block right-click -->
                             <div class="absolute inset-0" aria-hidden="true" oncontextmenu="return false;"></div>
                         </div>
                     @endforeach
@@ -128,10 +129,10 @@
                             </div>
                         </div>
                         <div class="mt-4 md:mt-0">
-                            <h3 class="text-xl md:text-2xl font-bold text-slate-900">Unimate — Focus without breaking your fast</h3>
+                            <h3 class="text-xl md:text-2xl font-bold text-slate-900">Unimate - Focus without breaking your fast</h3>
                             <ul class="mt-3 space-y-2 text-slate-700 list-disc list-inside">
-                                <li>Highly concentrated yerba mate; rich in chlorogenic acids & antioxidants</li>
-                                <li>convenient single-serve packets, No sugar; </li>
+                                <li>Highly concentrated yerba mate; rich in chlorogenic acids and antioxidants</li>
+                                <li>Convenient single-serve packets; no sugar</li>
                                 <li>Enjoy hot or cold, morning or between meals</li>
                             </ul>
                         </div>
@@ -146,9 +147,9 @@
                             </div>
                         </div>
                         <div class="mt-4 md:mt-0">
-                            <h3 class="text-xl md:text-2xl font-bold text-slate-900">Balance (Bios Life S) — Pre-meal fiber matrix</h3>
+                            <h3 class="text-xl md:text-2xl font-bold text-slate-900">Balance (Bios Life S) - Pre-meal fibre matrix</h3>
                             <ul class="mt-3 space-y-2 text-slate-700 list-disc list-inside">
-                                <li>Patented blend of soluble fibers, micronutrients & plant compounds</li>
+                                <li>Patented blend of soluble fibres, micronutrients and plant compounds</li>
                                 <li>Helps slow carbohydrate absorption; supports healthy cholesterol/glucose</li>
                                 <li>Take 10–15 minutes before your largest meal</li>
                             </ul>
@@ -178,7 +179,7 @@
                 <div class="rounded-2xl bg-slate-50 p-6 shadow-sm">
                     <div class="text-emerald-700 font-semibold">Step 2</div>
                     <h3 class="mt-1 font-bold text-xl">Balance (Bios Life S) - (Pre-meal)</h3>
-                    <p class="mt-2 text-slate-600">Patented fiber matrix formulated to blunt post-meal glucose/insulin spikes and keep you fuller.</p>
+                    <p class="mt-2 text-slate-600">Patented fibre matrix formulated to blunt post-meal glucose/insulin spikes and keep you fuller.</p>
                 </div>
                 <div class="rounded-2xl bg-slate-50 p-6 shadow-sm">
                     <div class="text-emerald-700 font-semibold">Step 3</div>
@@ -208,11 +209,11 @@
             <div class="mt-10 space-y-4 md:hidden">
                 @foreach ([
                     ['A1C', 'Hemoglobin A1c (HbA1c)', 'Average blood glucose over ~3 months (based on sugar attaching to hemoglobin).', 'Key indicator for pre/Type 2 diabetes; check every 3–6 months.'],
-                    ['Triglycerides', 'Serum Triglycerides', 'Main form of fat in the blood.', 'High levels raise risk of heart disease & metabolic syndrome.'],
+                    ['Triglycerides', 'Serum Triglycerides', 'Main form of fat in the blood.', 'High levels raise risk of heart disease and metabolic syndrome.'],
                     ['HDL', 'High-Density Lipoprotein', '“Good” cholesterol that carries cholesterol away from arteries.', 'Higher HDL is protective against heart disease.'],
-                    ['LDL', 'Low-Density Lipoprotein', '“Bad” cholesterol that contributes to plaque in arteries.', 'High LDL raises risk of heart attack & stroke.'],
+                    ['LDL', 'Low-Density Lipoprotein', '“Bad” cholesterol that contributes to plaque in arteries.', 'High LDL raises risk of heart attack and stroke.'],
                     ['Non-HDL', 'Total Cholesterol − HDL', 'Captures all atherogenic (“bad”) particles like LDL/VLDL.', 'Often a stronger predictor of cardiovascular risk than LDL alone.'],
-                    ['ALT', 'Alanine Aminotransferase', 'Liver enzyme; elevated values indicate liver stress/damage.', 'Lowering suggests improved liver health / less fatty liver.'],
+                    ['ALT', 'Alanine Aminotransferase', 'Liver enzyme; elevated values indicate liver stress/damage.', 'Lowering suggests improved liver health and less fatty liver.'],
                 ] as [$label, $tech, $what, $why])
                     <div class="rounded-xl border border-slate-200 p-4 shadow-sm">
                         <div class="flex items-center justify-between">
@@ -238,60 +239,60 @@
                     </thead>
                     <tbody class="divide-y divide-slate-200 text-sm">
                     <tr><td class="px-4 py-4 font-medium text-slate-800">A1C</td><td class="px-4 py-4">Hemoglobin A1c (HbA1c)</td><td class="px-4 py-4">Average blood glucose over ~3 months (sugar bound to hemoglobin).</td><td class="px-4 py-4">Primary indicator for pre/Type 2 diabetes; track every 3–6 months.</td></tr>
-                    <tr><td class="px-4 py-4 font-medium text-slate-800">Triglycerides</td><td class="px-4 py-4">Serum Triglycerides</td><td class="px-4 py-4">Main fat circulating in blood.</td><td class="px-4 py-4">High levels raise risk of heart disease & metabolic syndrome.</td></tr>
+                    <tr><td class="px-4 py-4 font-medium text-slate-800">Triglycerides</td><td class="px-4 py-4">Serum Triglycerides</td><td class="px-4 py-4">Main fat circulating in blood.</td><td class="px-4 py-4">High levels raise risk of heart disease and metabolic syndrome.</td></tr>
                     <tr><td class="px-4 py-4 font-medium text-slate-800">HDL</td><td class="px-4 py-4">High-Density Lipoprotein Cholesterol</td><td class="px-4 py-4">“Good” cholesterol that removes excess cholesterol.</td><td class="px-4 py-4">Higher HDL is protective against heart disease.</td></tr>
-                    <tr><td class="px-4 py-4 font-medium text-slate-800">LDL</td><td class="px-4 py-4">Low-Density Lipoprotein Cholesterol</td><td class="px-4 py-4">“Bad” cholesterol contributing to plaque build-up.</td><td class="px-4 py-4">Higher LDL increases risk of atherosclerosis & stroke.</td></tr>
+                    <tr><td class="px-4 py-4 font-medium text-slate-800">LDL</td><td class="px-4 py-4">Low-Density Lipoprotein Cholesterol</td><td class="px-4 py-4">“Bad” cholesterol contributing to plaque build-up.</td><td class="px-4 py-4">Higher LDL increases risk of atherosclerosis and stroke.</td></tr>
                     <tr><td class="px-4 py-4 font-medium text-slate-800">Non-HDL</td><td class="px-4 py-4">Total Cholesterol − HDL</td><td class="px-4 py-4">All atherogenic particles (LDL, VLDL, etc.).</td><td class="px-4 py-4">Strong overall predictor of cardiovascular risk.</td></tr>
-                    <tr><td class="px-4 py-4 font-medium text-slate-800">ALT</td><td class="px-4 py-4">Alanine Aminotransferase</td><td class="px-4 py-4">Liver enzyme indicating liver cell injury when elevated.</td><td class="px-4 py-4">Improvement suggests better liver function / less fatty liver.</td></tr>
+                    <tr><td class="px-4 py-4 font-medium text-slate-800">ALT</td><td class="px-4 py-4">Alanine Aminotransferase</td><td class="px-4 py-4">Liver enzyme indicating liver cell injury when elevated.</td><td class="px-4 py-4">Improvement suggests better liver function and less fatty liver.</td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
 
-    <!-- My Story (full content restored) -->
+    <!-- My Story -->
     <section class="py-16 bg-slate-50" id="story">
         <div class="mx-auto max-w-4xl px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center">My Story</h2>
 
             <div class="mt-8 space-y-6 text-slate-700 leading-relaxed">
-                <p>Hi, I’m <strong>Kobi </strong>from Melbourne, Australia.</p>
+                <p>Hi, I’m <strong>Kobi</strong> from Melbourne, Australia.</p>
 
                 <p>For most of my life I have battled with my weight and the heaviest I reached
-                    <strong>157 kg (346 lbs) </strong>in 2022 due mostly to the COVID lockdowns. I was wearing <strong>8XL clothes</strong>, relying on a seatbelt extender on planes and felt bad for anyone who sat next to me.
-                    I had limited mobility and constantly feeling embarrassed and self-conscious about my weight and appearance.
-                    I tried diets and exercise and even lost up to 10 kg, but whenever I stopped, the weight returned, sometimes i'd gain back even more.</p>
+                    <strong>157 kg (346.1 lbs)</strong> in 2022 due mostly to the COVID lockdowns. I was wearing <strong>8XL clothes</strong>, relying on a seatbelt extender on planes and felt bad for anyone who sat next to me.
+                    I had limited mobility and constantly felt embarrassed and self-conscious about my weight and appearance.
+                    I tried diets and exercise and even lost up to 10 kg, but whenever I stopped, the weight returned, sometimes I'd gain back even more.</p>
 
-                <p>The weight was only part of the problem and I knew my health was deteriorating in ways that were impossible to ignore,
-                    I had <strong>Inflammation/Swollen ankles</strong> (if i pressed on them they would indent),
-                    <strong>Gout</strong> (so painful) I would get it in my feet and it would last a few days I had medication to control the onsets,
-                    <strong>Vertigo</strong> (so scary, my eyes would roll in my head and I couldn't stop them or control them, make you so dizzy you feel sick, the scariest thing I've experienced),
-                    <strong>Sleep Apnea</strong> requiring a CPAP machine (still use out habit now),  <strong>IBS</strong> (I though I was allergic to eggs, but I actually had IBS),
-                    <strong>Constant Urination</strong>, and a cloud of  <strong>Depression</strong>
+                <p>The weight was only part of the problem and I knew my health was deteriorating in ways that were impossible to ignore.
+                    I had <strong>Inflammation/Swollen ankles</strong> (if I pressed on them they would indent),
+                    <strong>Gout</strong> (so painful). I would get it in my feet and it would last a few days; I had medication to control the onsets,
+                    <strong>Vertigo</strong> (so scary, my eyes would roll in my head and I couldn't stop them or control them; it makes you so dizzy you feel sick, the scariest thing I've experienced),
+                    <strong>Sleep apnoea</strong> requiring a CPAP machine (still use out of habit now), <strong>IBS</strong> (I thought I was allergic to eggs, but I actually had IBS),
+                    <strong>Constant urination</strong>, and a cloud of <strong>Depression</strong>
                     that left me feeling trapped and helpless.</p>
 
                 <p>In early <strong>2025</strong>, a loss in my immediate family became the wake-up call I desperately needed.
                     I went to the doctor for a full check-up and I had all my blood work done, and my weight was taken and my doctor was concerned for me.
-                    When the blood results come back, the doctor wanted to go over the results in person, i knew that wasn't a good sign. He was concerned and told me that I was being diagnosed with <strong>Type 2 Diabetes</strong>.
-                    My <strong>A1C was 11.3</strong> which was extremely high. The doctor said if i didnt make immediate lifestyle changes my organs and other crucial parts of my body will start to shutdown.
+                    When the blood results came back, the doctor wanted to go over the results in person (I knew that wasn't a good sign). He was concerned and told me that I was being diagnosed with <strong>Type 2 Diabetes</strong>.
+                    My <strong>A1C was 11.3</strong>, which was extremely high. The doctor said if I didn't make immediate lifestyle changes my organs and other crucial parts of my body would start to shut down.
                     I was placed on a care plan and I was prescribed Metformin. Hearing those results was sobering,
                     but it was also the push I needed to take control.</p>
 
                 <p>I remembered seeing the <strong>Feel Great System</strong> on TikTok and decided it was time to give it a chance.
                     I ordered the products and committed fully to the protocol. The first time I tried <strong>Unimate tea</strong>,
-                    I felt something shift, it gave me a lot of energy and a sense of hope. Fasting was intimidating at first, but with the Unimate tea supping during the fasting period
-                    i didnt get intense hunger pains. I was hungry, but it was manageable and I knew it was working. Now after 6 months I'm actually down to one meal a day as I'm not hungry at dinnertime.
-                    The weight started coming off almost pretty much straight away.</p>
+                    I felt something shift - it gave me a lot of energy and a sense of hope. Fasting was intimidating at first, but with the Unimate tea <strong>sipping</strong> during the fasting period
+                    I didn't get intense hunger pains. I was hungry, but it was manageable and I knew it was working. Now after 6 months I'm actually down to one meal a day as I'm not hungry at dinnertime.
+                    The weight started coming off almost straight away.</p>
 
-                <p>I stopped all snacks, which I though would be hard because I liked watching movie with a bag of potato chips and a chocolate, but I was determined, so I've cut out all snacks in between meals.
-                    I dont actually miss them tbh. If I do want to have a snack I just have it directly after my meal. So I moved to a two meals a day plan,
-                    lunch at 12pm and dinner around 6pm having the fibre matrix (Bios Life S) before each meal, effectively skipping breakfast.
+                <p>I stopped all snacks, which I thought would be hard because I liked watching a movie with a bag of potato chips and a chocolate, but I was determined, so I've cut out all snacks in between meals.
+                    I don't actually miss them to be honest. If I do want to have a snack I just have it directly after my meal. So I moved to a two meals a day plan,
+                    lunch at 12pm and dinner around 6pm, having the fibre matrix (Bios Life S) before each meal, effectively skipping breakfast.
                     I purchased a glucose meter and each day watched my numbers steadily improve.</p>
 
-                <p>Six months later, the results have been life-changing. My <strong>Type 2 Diabetes has been reversed</strong>,
-                    <strong> A1C down from 11.3 (Jan) → 6.6 (May) → now 5.8 (Aug)</strong>. I’ve lost <strong>37 kg (81.5 lbs)</strong>,
-                    gone from <strong>8XL to 2XL</strong>, and the conditions that once held me back, Gout, Vertigo, IBS,
-                    and Constant Urination, are gone. My depression has lifted and I have more energy than ever, I actually <em>enjoy</em> going to the gym,
+                <p>Now, the results have been life-changing. My <strong>Type 2 Diabetes has been reversed</strong>,
+                    <strong>A1C down from 11.3 (Jan 2025) → 6.6 (May 2025) → now 5.8 (Aug 2025)</strong>. I’ve lost <strong>38 kg (83.8 lbs)</strong>,
+                    gone from <strong>8XL to 2XL</strong>, and the conditions that once held me back (Gout, Vertigo, IBS,
+                    and Constant Urination) are gone. My depression has lifted and I have more energy than ever; I actually <em>enjoy</em> going to the gym,
                     and for the first time in years, I no longer feel self-conscious.</p>
 
                 <!-- Health & Bloodwork Table -->
@@ -302,23 +303,23 @@
                             <thead class="bg-slate-100">
                             <tr>
                                 <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Marker</th>
-                                <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Jan 25</th>
-                                <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Aug 25</th>
+                                <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Jan 2025</th>
+                                <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">Aug 2025</th>
                                 <th class="px-4 py-2 text-left text-sm font-semibold text-slate-700">What it means</th>
                             </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-200 text-sm">
                             <tr>
                                 <td class="px-4 py-3 font-medium text-slate-800">Weight</td>
-                                <td class="px-4 py-3">157 kg (346 lbs)</td>
-                                <td class="px-4 py-3 text-emerald-600 font-bold">120 kg (264 lbs)</td>
-                                <td class="px-4 py-3 text-slate-600">Losing 37 kg (81.5 lbs) reduced strain on joints, heart, and overall health.</td>
+                                <td class="px-4 py-3">157 kg (346.1 lbs)</td>
+                                <td class="px-4 py-3 text-emerald-600 font-bold">119 kg (262.3 lbs)</td>
+                                <td class="px-4 py-3 text-slate-600">Losing 38 kg (83.8 lbs) reduced strain on joints, heart, and overall health.</td>
                             </tr>
                             <tr>
                                 <td class="px-4 py-3 font-medium text-slate-800">A1C (Blood sugar)</td>
                                 <td class="px-4 py-3">11.3</td>
                                 <td class="px-4 py-3 text-emerald-600 font-bold">5.8</td>
-                                <td class="px-4 py-3 text-slate-600">Key diabetes marker. Normal is below 6.0, Shows reversal of Type 2 Diabetes.</td>
+                                <td class="px-4 py-3 text-slate-600">Key diabetes marker. Normal is below 6.0; shows reversal of Type 2 Diabetes.</td>
                             </tr>
                             <tr>
                                 <td class="px-4 py-3 font-medium text-slate-800">Triglycerides</td>
@@ -355,7 +356,7 @@
                     </div>
                 </div>
 
-                <p class="mt-6"><strong>Today, I feel incredible.</strong> I haven’t just improved my health, I’ve regained my confidence, my energy, and my life.</p>
+                <p class="mt-6"><strong>Today, I feel incredible.</strong> I haven’t just improved my health; I’ve regained my confidence, my energy, and my life.</p>
             </div>
         </div>
     </section>
@@ -387,7 +388,7 @@
         </div>
     </section>
 
-    <!-- Daily Timeline (restored) -->
+    <!-- Daily Timeline -->
     <section id="timeline" class="py-16 bg-white">
         <div class="mx-auto max-w-5xl px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center">Daily Timeline (16:8 Example)</h2>
@@ -517,7 +518,7 @@
         </div>
     </section>
 
-    <!-- FAQ (restored) -->
+    <!-- FAQ -->
     <section class="py-16 bg-slate-50" id="faq">
         <div class="mx-auto max-w-5xl px-6">
             <h3 class="text-2xl font-bold">FAQ</h3>
@@ -552,6 +553,7 @@
             </div>
         </div>
     </section>
+
     <!-- Comparison: Pharmaceuticals vs Nutraceutical -->
     <section id="comparison" class="py-16 bg-slate-50">
         <div class="mx-auto max-w-6xl px-6">
@@ -573,7 +575,7 @@
                         <li><strong>GLP-1 receptor agonists</strong> (e.g. semaglutide): nausea, vomiting, diarrhoea,
                             constipation, abdominal pain, belching (“sulphur burps”), headache, fatigue,
                             risk of gallstones, pancreatitis, intestinal blockage, worsening of diabetic retinopathy.</li>
-                        <li><strong>Duale GIP/GLP-1 agonists</strong> (e.g. tirzepatide): similar GI side effects plus increased risk
+                        <li><strong>Dual GIP/GLP-1 agonists</strong> (e.g. tirzepatide): similar GI side effects plus increased risk
                             of gallbladder issues and gastrointestinal discomfort.</li>
                         <li><strong>Metformin</strong> (biguanide): diarrhoea, nausea, bloating, abdominal pain, metallic taste,
                             vitamin B12 deficiency with long-term use, rare but serious risk of lactic acidosis.</li>
@@ -618,7 +620,7 @@
     <!-- QR Code -->
     <section class="py-16 bg-emerald-50" id="qr">
         <div class="mx-auto max-w-4xl px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Quick Access — Order with a Scan</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Quick Access - Order with a Scan</h2>
             <p class="mt-3 text-slate-700 max-w-2xl mx-auto">Simply scan the QR code below with your phone’s camera to go directly to purchase the products.</p>
             <div class="mt-8 flex justify-center">
                 <div class="bg-white p-6 rounded-2xl shadow-lg">
