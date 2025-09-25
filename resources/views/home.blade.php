@@ -21,10 +21,9 @@
                         Kobi Montague
                     </h2>
                     <p class="mt-5 text-lg md:text-xl text-slate-700">
-                        A simple daily routine that pairs <span class="font-semibold">Unimate</span> and <span class="font-semibold">Balance (Bios Life S)</span> with
-                        time-based eating to support energy, focus, hunger control, and metabolic health for only A$5.66 a day*, the same price as a Melbourne coffee!
+                        A simple daily routine that pairs <span class="font-semibold">Unimate</span> and <span class="font-semibold">Balance</span> with
+                        time-based eating to support energy, focus, hunger control, and metabolic health.
                     </p>
-                    <p class="text-slate-500 text-sm mt-4">* A$5.66 a day (based on 3 sachets a day) August 2025, using Kobi's discount link.</p>
                     <div class="mt-8 flex flex-wrap gap-3">
                         <a href="#transformation" class="inline-flex items-center rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-700">See my transformation</a>
                         <a href="{{ url('/science') }}" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white shadow hover:bg-indigo-700">Read the science</a>
@@ -146,11 +145,11 @@
                     <div class="md:grid md:grid-cols-[110px,1fr] md:items-center md:gap-6">
                         <div class="flex justify-center md:block">
                             <div class="h-28 w-20 md:h-32 md:w-24">
-                                <img src="{{ asset('images/Unicity/Bios_Life_S.png') }}" alt="Unicity Balance (Bios Life S)" class="h-full w-full object-contain" />
+                                <img src="{{ asset('images/Unicity/Balance_single.png') }}" alt="Unicity Balance" class="h-full w-full object-contain" />
                             </div>
                         </div>
                         <div class="mt-4 md:mt-0">
-                            <h3 class="text-xl md:text-2xl font-bold text-slate-900">Balance (Bios Life S) - Pre-meal fibre matrix</h3>
+                            <h3 class="text-xl md:text-2xl font-bold text-slate-900">Balance - Pre-meal fibre matrix</h3>
                             <ul class="mt-3 space-y-2 text-slate-700 list-disc list-inside">
                                 <li>Patented blend of soluble fibres, micronutrients and plant compounds</li>
                                 <li>Helps slow carbohydrate absorption; supports healthy cholesterol/glucose</li>
@@ -169,7 +168,7 @@
             <h2 class="text-3xl md:text-4xl font-bold">How it works</h2>
             <p class="mt-4 text-slate-600 max-w-3xl">
                 Two products + one practice. Drink <span class="font-semibold">Unimate</span> in the morning to support focus and energy during your fast.
-                Take <span class="font-semibold">Balance (Bios Life S)</span> 10–15 minutes before your largest meal to slow carbohydrate impact and help control hunger.
+                Take <span class="font-semibold">Balance</span> 10–15 minutes before your largest meal to slow carbohydrate impact and help control hunger.
                 Keep a daily fasting window (commonly 16:8) that fits your lifestyle.
             </p>
 
@@ -181,7 +180,7 @@
                 </div>
                 <div class="rounded-2xl bg-slate-50 p-6 shadow-sm">
                     <div class="text-emerald-700 font-semibold">Step 2</div>
-                    <h3 class="mt-1 font-bold text-xl">Balance (Bios Life S) - (Pre-meal)</h3>
+                    <h3 class="mt-1 font-bold text-xl">Balance - (Pre-meal)</h3>
                     <p class="mt-2 text-slate-600">Patented fibre matrix formulated to blunt post-meal glucose/insulin spikes and keep you fuller.</p>
                 </div>
                 <div class="rounded-2xl bg-slate-50 p-6 shadow-sm">
@@ -193,7 +192,7 @@
 
             <section class="py-12">
                 <div class="mx-auto max-w-7xl px-6 flex">
-                    <img src="{{ asset('images/Unicity/practice_image.png') }}" alt="Unimate + Balance (Bios Life S) + Time-based eating" class="max-w-md md:max-w-xl w-full h-auto mx-auto">
+                    <img src="{{ asset('images/Unicity/practice_image_2.png') }}" alt="Unimate + Balance + Time-based eating" class="max-w-md md:max-w-xl w-full h-auto mx-auto">
                 </div>
             </section>
         </div>
@@ -289,7 +288,7 @@
 
                 <p>I stopped all snacks, which I thought would be hard because I liked watching a movie with a bag of potato chips and a chocolate, but I was determined, so I've cut out all snacks in between meals.
                     I don't actually miss them to be honest. If I do want to have a snack I just have it directly after my meal. So I moved to a two meals a day plan,
-                    lunch at 12pm and dinner around 6pm, having the fibre matrix (Bios Life S) before each meal, effectively skipping breakfast.
+                    lunch at 12pm and dinner around 6pm, having the fibre matrix before each meal, effectively skipping breakfast.
                     I purchased a glucose meter and each day watched my numbers steadily improve.</p>
 
                 <p>Now, the results have been life-changing. My <strong>Type 2 Diabetes has been reversed</strong>,
@@ -385,7 +384,7 @@
             <h3 class="text-2xl font-bold">How to use</h3>
             <ol class="mt-6 space-y-4 text-slate-700 list-decimal pl-6">
                 <li><span class="font-semibold">Morning:</span> Mix Unimate with water (hot or cold) and sip during your fast.</li>
-                <li><span class="font-semibold">Pre-meal:</span> Mix Balance (Bios Life S) in water and drink 10–15 minutes before your largest meal.</li>
+                <li><span class="font-semibold">Pre-meal:</span> Mix Balance in water and drink 10–15 minutes before your largest meal.</li>
                 <li><span class="font-semibold">Window:</span> Keep a fasting window (e.g., 16 hours) between dinner and your first meal.</li>
             </ol>
         </div>
@@ -396,7 +395,7 @@
         <div class="mx-auto max-w-5xl px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center">Daily Timeline (16:8 Example)</h2>
             <p class="mt-2 text-center text-slate-600">
-                Adjust the times to suit your routine. Balance (Bios Life S) before meals, Unimate in your fasting window.
+                Adjust the times to suit your routine. Balance before meals, Unimate in your fasting window.
             </p>
 
             <div class="mt-10 relative">
@@ -408,8 +407,8 @@
                         <div class="flex flex-col md:flex-row md:items-center md:gap-6">
                             <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">5–7pm</div>
                             <div class="rounded-2xl bg-slate-50 p-4 shadow">
-                                <p class="font-semibold">Balance (Bios Life S) + dinner</p>
-                                <p class="text-sm text-slate-600">Take <span class="font-medium">Balance</span> 10–15 minutes before dinner.</p>
+                                <p class="font-semibold">Balance + dinner</p>
+                                <p class="text-sm text-slate-600">Take <span class="font-medium">Balance</span> 10–15 minutes before dinner. <br> If using Feel Great 2.0 you can take Balance before your largest meal.</p>
                             </div>
                         </div>
                     </li>
@@ -507,8 +506,9 @@
                         <div class="flex flex-col md:flex-row md:items-center md:gap-6">
                             <div class="w-28 shrink-0 text-sm font-semibold text-slate-600">Noon</div>
                             <div class="rounded-2xl bg-slate-50 p-4 shadow">
-                                <p class="font-semibold">Balance (Bios Life S) + lunch (fasting ends)</p>
-                                <p class="text-sm text-slate-600">Take <span class="font-medium">Balance (Bios Life S)</span> 10–15 minutes before your first meal.</p>
+                                <p class="font-semibold">Balance + lunch (fasting ends)</p>
+                                <p class="text-sm text-slate-600">Take <span class="font-medium">Balance</span>
+                                    10–15 minutes before your first meal.  <br> If using Feel Great 2.0 you can take Balance before your largest meal.</p>
                             </div>
                         </div>
                     </li>
@@ -531,7 +531,7 @@
                     <p class="text-slate-700">No, Unimate is designed to be taken during your fast.</p>
                 </div>
                 <div>
-                    <h4 class="font-semibold">When do I take Balance (Bios Life S)?</h4>
+                    <h4 class="font-semibold">When do I take Balance?</h4>
                     <p class="text-slate-700">10–15 minutes before your largest meal; you can also use it before other meals as needed.</p>
                 </div>
                 <div>
@@ -552,7 +552,7 @@
             </p>
 
             <div class="mt-10">
-                <img src="{{ asset('images/Unicity/AUS_34305_info_english.jpg') }}" alt="Feel Great System Brochure" class="rounded-2xl shadow-lg mx-auto w-full max-w-4xl object-contain">
+                <img src="{{ asset('images/Unicity/AUS_the_practice_image2.png') }}" alt="Feel Great System Brochure" class="rounded-2xl shadow-lg mx-auto w-full max-w-4xl object-contain">
             </div>
         </div>
     </section>
@@ -637,7 +637,7 @@
     <section id="buy" class="py-16 bg-white">
         <div class="mx-auto max-w-6xl px-6 text-center">
             <h3 class="text-3xl font-extrabold">Ready to Feel Great?</h3>
-            <p class="mt-3 text-slate-700">Keep it simple: Unimate in the morning, Balance (Bios Life S) before your biggest meal.</p>
+            <p class="mt-3 text-slate-700">Keep it simple: Unimate in the morning, Balance before your biggest meal.</p>
             <div class="mt-8 flex justify-center gap-3">
                 <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
                    class="inline-flex items-center rounded-xl bg-emerald-600 px-6 py-3 text-white font-semibold shadow hover:bg-emerald-700">Order the System</a>

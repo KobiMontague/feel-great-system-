@@ -135,7 +135,7 @@
                     University of Sydney: Blood Glucose & Insulin Study
                 </h2>
                 <p class="mt-4 text-slate-700 leading-relaxed">
-                    Researchers evaluated how the phytonutrient combination in <span class="font-semibold">Bios Life</span> affects
+                    Researchers evaluated how the phytonutrient combination in <span class="font-semibold">Bios Life (Balance)</span> affects
                     post-prandial blood glucose and insulin responses after white bread.
                 </p>
 
@@ -162,7 +162,7 @@
     <section class="py-16 bg-white">
         <div class="mx-auto max-w-6xl px-6 text-center">
             <h3 class="text-3xl font-extrabold">Ready to try the protocol?</h3>
-            <p class="mt-3 text-slate-700">Unimate in the morning, Balance (Bios Life S) before your meals, and a fasting window that fits you.</p>
+            <p class="mt-3 text-slate-700">Unimate in the morning, Balance before your largest meals, and a fasting window that fits you.</p>
             <div class="mt-8 flex justify-center gap-3">
                 <a href="{{ config('unicity.referral_link') }}" target="_blank" rel="noopener"
                    class="inline-flex items-center rounded-xl bg-emerald-600 px-6 py-3 text-white font-semibold shadow hover:bg-emerald-700">Order the System</a>

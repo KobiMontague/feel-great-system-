@@ -22,7 +22,7 @@
                 </div>
                 <div class="relative">
                     <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-emerald-100 to-emerald-200 shadow-inner flex items-center justify-center">
-                        <img src="{{ asset('images/insulin resistance/IR.png')}}"      alt="University of Sydney study: blood glucose and insulin response with Bios Life"class="max-h-[85%] object-contain">
+                        <img src="{{ asset('images/insulin resistance/IR.png')}}"      alt="University of Sydney study: blood glucose and insulin response with Balance" class="max-h-[85%] object-contain">
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
             </p>
             <ul class="mt-4 space-y-3 text-slate-700 list-disc list-inside">
                 <li><strong>Unimate:</strong> A concentrated yerba mate drink. It supports focus and helps manage hunger during a fasting window, making it easier to go longer without food.</li>
-                <li><strong>Balance (Bios Life S):</strong> A patented fibre matrix taken before meals. It slows how quickly food is turned into glucose so insulin does not have to spike as high.</li>
+                <li><strong>Balance:</strong> A patented fibre matrix taken before meals. It slows how quickly food is turned into glucose so insulin does not have to spike as high.</li>
             </ul>
             <p class="mt-4 text-slate-700">
                 To get the same fibre effect naturally, you would need to eat the equivalent of about <strong>two large bowls of vegetables</strong> before each meal. That is not realistic for most people.
